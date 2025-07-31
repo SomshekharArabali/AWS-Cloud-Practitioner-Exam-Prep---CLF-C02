@@ -21,6 +21,7 @@ export default function QuizPage() {
   const [timeElapsed, setTimeElapsed] = useState(0)
   const [showDetails, setShowDetails] = useState(false)
   const [loading, setLoading] = useState(true)
+  const [showAnswerFeedback, setShowAnswerFeedback] = useState(false)
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -76,18 +77,66 @@ export default function QuizPage() {
 
   const currentQuestion = questions[currentQuestionIndex]
 
-  // Check if question has multiple correct answers
-  const isMultipleChoice = Array.isArray(currentQuestion.correct_answer_id)
+  if (!currentQuestion) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 flex items-center justify-center">
+        <div className="text-center">
+          <p className="text-slate-600">Error loading current question.</p>
+          <Link href="/question-sets">
+            <Button className="mt-4">Back to Question Sets</Button>
+          </Link>
+        </div>
+      </div>
+    )
+  }
+
+  const isMultipleChoice =
+    Array.isArray(currentQuestion.correct_answer_id) && currentQuestion.correct_answer_id.length > 1
   const requiredSelections = isMultipleChoice ? currentQuestion.correct_answer_id.length : 1
 
   const progress = ((currentQuestionIndex + 1) / questions.length) * 100
 
+  // Function to check if an option is correct
+  const isOptionCorrect = (optionId: number) => {
+    const correctAnswers = Array.isArray(currentQuestion.correct_answer_id)
+      ? currentQuestion.correct_answer_id
+      : [currentQuestion.correct_answer_id]
+    return correctAnswers.includes(optionId)
+  }
+
+  // Function to get the option styling based on selection and correctness
+  const getOptionStyling = (optionId: number) => {
+    const isSelected = isOptionSelected(optionId)
+    const isCorrect = isOptionCorrect(optionId)
+
+    if (!showAnswerFeedback) {
+      // Normal state - before revealing answers
+      if (isSelected) {
+        return "bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white"
+      }
+      return "hover:bg-slate-50"
+    } else {
+      // After revealing answers
+      if (isSelected && isCorrect) {
+        return "bg-gradient-to-r from-green-500 to-green-600 text-white border-green-500"
+      } else if (isSelected && !isCorrect) {
+        return "bg-gradient-to-r from-red-500 to-red-600 text-white border-red-500"
+      } else if (!isSelected && isCorrect) {
+        return "bg-gradient-to-r from-green-100 to-green-200 text-green-800 border-green-300"
+      } else {
+        return "hover:bg-slate-50"
+      }
+    }
+  }
+
   const handleAnswerSelect = (optionId: number) => {
+    // Prevent selection if answers are revealed
+    if (showAnswerFeedback) return
+
     const newAnswers = [...selectedAnswers]
     const currentSelections = newAnswers[currentQuestionIndex] || []
 
     if (isMultipleChoice) {
-      // Handle multiple choice
       let updatedSelections
       if (Array.isArray(currentSelections)) {
         if (currentSelections.includes(optionId)) {
@@ -95,14 +144,13 @@ export default function QuizPage() {
         } else if (currentSelections.length < requiredSelections) {
           updatedSelections = [...currentSelections, optionId]
         } else {
-          return // Don't allow more selections than required
+          return
         }
       } else {
         updatedSelections = [optionId]
       }
       newAnswers[currentQuestionIndex] = updatedSelections
     } else {
-      // Handle single choice
       newAnswers[currentQuestionIndex] = optionId
     }
 
@@ -126,10 +174,17 @@ export default function QuizPage() {
   }
 
   const handleNext = () => {
-    if (currentQuestionIndex < questions.length - 1) {
-      setCurrentQuestionIndex((prev) => prev + 1)
+    if (!showAnswerFeedback) {
+      // First click - reveal answers
+      setShowAnswerFeedback(true)
     } else {
-      completeQuiz()
+      // Second click - move to next question
+      setShowAnswerFeedback(false)
+      if (currentQuestionIndex < questions.length - 1) {
+        setCurrentQuestionIndex((prev) => prev + 1)
+      } else {
+        completeQuiz()
+      }
     }
   }
 
@@ -140,7 +195,6 @@ export default function QuizPage() {
       const correctAnswer = question.correct_answer_id
 
       if (Array.isArray(correctAnswer)) {
-        // Multiple choice question
         if (
           Array.isArray(userAnswer) &&
           userAnswer.length === correctAnswer.length &&
@@ -149,7 +203,6 @@ export default function QuizPage() {
           correctCount++
         }
       } else {
-        // Single choice question
         if (userAnswer === correctAnswer) {
           correctCount++
         }
@@ -166,6 +219,7 @@ export default function QuizPage() {
     setScore(0)
     setTimeElapsed(0)
     setShowDetails(false)
+    setShowAnswerFeedback(false)
   }
 
   const formatTime = (seconds: number) => {
@@ -269,7 +323,6 @@ export default function QuizPage() {
                     let userOptions = []
 
                     if (Array.isArray(correctAnswer)) {
-                      // Multiple choice
                       correctOptions = question.options.filter((opt: any) => correctAnswer.includes(opt.option_id))
                       if (Array.isArray(userAnswer)) {
                         userOptions = question.options.filter((opt: any) => userAnswer.includes(opt.option_id))
@@ -278,7 +331,6 @@ export default function QuizPage() {
                           userAnswer.every((id) => correctAnswer.includes(id))
                       }
                     } else {
-                      // Single choice
                       correctOptions = question.options.filter((opt: any) => opt.option_id === correctAnswer)
                       if (userAnswer) {
                         userOptions = question.options.filter((opt: any) => opt.option_id === userAnswer)
@@ -389,31 +441,59 @@ export default function QuizPage() {
             )}
           </CardHeader>
           <CardContent className="space-y-4">
+            {showAnswerFeedback && (
+              <div >
+                
+              </div>
+            )}
+
             {currentQuestion.options.map((option: any) => {
               const isSelected = isOptionSelected(option.option_id)
+              const isCorrect = isOptionCorrect(option.option_id)
 
               return (
                 <Button
                   key={option.option_id}
-                  variant={isSelected ? "default" : "outline"}
-                  className={`w-full text-left justify-start p-4 h-auto whitespace-normal ${
-                    isSelected
-                      ? "bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white"
-                      : "hover:bg-slate-50"
-                  }`}
+                  variant={isSelected && !showAnswerFeedback ? "default" : "outline"}
+                  className={`w-full text-left justify-start p-4 h-auto whitespace-normal transition-all duration-300 ${getOptionStyling(option.option_id)}`}
                   onClick={() => handleAnswerSelect(option.option_id)}
+                  disabled={showAnswerFeedback}
                 >
                   <div className="flex items-start space-x-3">
                     <div
-                      className={`w-6 h-6 ${isMultipleChoice ? "rounded-md" : "rounded-full"} border-2 flex items-center justify-center mt-0.5 ${
-                        isSelected ? "border-white bg-white" : "border-slate-300"
+                      className={`w-6 h-6 ${isMultipleChoice ? "rounded-md" : "rounded-full"} border-2 flex items-center justify-center mt-0.5 transition-all duration-300 ${
+                        showAnswerFeedback
+                          ? isSelected && isCorrect
+                            ? "border-white bg-white"
+                            : isSelected && !isCorrect
+                              ? "border-white bg-white"
+                              : !isSelected && isCorrect
+                                ? "border-green-600 bg-green-100"
+                                : "border-slate-300"
+                          : isSelected
+                            ? "border-white bg-white"
+                            : "border-slate-300"
                       }`}
                     >
-                      {isSelected && (
+                      {showAnswerFeedback ? (
+                        isSelected && isCorrect ? (
+                          <div
+                            className={`w-3 h-3 ${isMultipleChoice ? "rounded-sm" : "rounded-full"} bg-green-500`}
+                          ></div>
+                        ) : isSelected && !isCorrect ? (
+                          <div
+                            className={`w-3 h-3 ${isMultipleChoice ? "rounded-sm" : "rounded-full"} bg-red-500`}
+                          ></div>
+                        ) : !isSelected && isCorrect ? (
+                          <div
+                            className={`w-3 h-3 ${isMultipleChoice ? "rounded-sm" : "rounded-full"} bg-green-600`}
+                          ></div>
+                        ) : null
+                      ) : isSelected ? (
                         <div
                           className={`w-3 h-3 ${isMultipleChoice ? "rounded-sm" : "rounded-full"} bg-orange-500`}
                         ></div>
-                      )}
+                      ) : null}
                     </div>
                     <span className="flex-1">{option.option_text}</span>
                   </div>
@@ -424,10 +504,14 @@ export default function QuizPage() {
             <div className="pt-6">
               <Button
                 onClick={handleNext}
-                disabled={!canProceed()}
+                disabled={!canProceed() && !showAnswerFeedback}
                 className="w-full bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 disabled:opacity-50"
               >
-                {currentQuestionIndex === questions.length - 1 ? "Complete Quiz" : "Next Question"}
+                {showAnswerFeedback
+                  ? currentQuestionIndex === questions.length - 1
+                    ? "Complete Quiz"
+                    : "Next Question"
+                  : "Show Answer"}
               </Button>
             </div>
           </CardContent>

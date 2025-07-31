@@ -18,6 +18,10 @@
       {
         "option_id": 4,
         "option_text": "Pay-as-you-go pricing"
+      },
+      {
+        "option_id": 5,
+        "option_text": "Reliability."
       }
     ],
     "correct_answer_id": [3, 4]
@@ -64,9 +68,13 @@
       {
         "option_id": 4,
         "option_text": "A network file system"
+      },
+      {
+        "option_id": 5,
+        "option_text": "A durable storage system."
       }
     ],
-    "correct_answer_id": [2,4]  
+    "correct_answer_id": [2,5]  
   },
   {
     "question_id": 604,
@@ -89,7 +97,7 @@
         "option_text": "Auto Scaling"
       }
     ],
-    "correct_answer_id": [1,4]
+    "correct_answer_id": [1,2]
   },
   {
     "question_id": 605,
@@ -116,7 +124,7 @@
   },
   {
     "question_id": 606,
-    "question_text": "A company is considering using AWS for a self-hosted database that requires a nightly shutdown for maintenance and cost-saving purposes. <br/> Which service should the company use?",
+    "question_text": "A company is considering using AWS for a self-hosted database that requires a nightly shutdown for maintenance and cost-saving purposes.  Which service should the company use?",
     "options": [
       {
         "option_id": 1,
@@ -501,9 +509,13 @@
       {
         "option_id": 4,
         "option_text": "Using Multi-Factor Authentication (MFA)"
+      },
+      {
+        "option_id": 5,
+        "option_text": "Enforcing password strength and expiration."
       }
     ],
-    "correct_answer_id": [3,4]
+    "correct_answer_id": [4,5]
   },
   {
     "question_id": 623,
@@ -524,9 +536,13 @@
       {
         "option_id": 4,
         "option_text": "Amazon Redshift"
+      },
+      {
+        "option_id": 5,
+        "option_text": "Amazon EFS."
       }
     ],
-    "correct_answer_id": [2,4]
+    "correct_answer_id": [2,5]
   },
   {
     "question_id": 624,
@@ -553,7 +569,7 @@
   },
   {
     "question_id": 625,
-    "question_text": "A customer needs to run a MySQL database that easily scales.<br/>Which AWS service should they use?",
+    "question_text": "A customer needs to run a MySQL database that easily scales.Which AWS service should they use?",
     "options": [
       {
         "option_id": 1,
@@ -875,7 +891,7 @@
   },
   {
     "question_id": 639,
-    "question_text": "A customer is using multiple AWS accounts with separate billing. <br/>How can the customer take advantage of volume discounts with minimal impact to the AWS resources?",
+    "question_text": "A customer is using multiple AWS accounts with separate billing. How can the customer take advantage of volume discounts with minimal impact to the AWS resources?",
     "options": [
       {
         "option_id": 1,
@@ -915,9 +931,13 @@
       {
         "option_id": 4,
         "option_text": "Real-time monitoring"
+      },
+      {
+        "option_id": 5,
+        "option_text": "Adjustable retention."
       }
     ],
-    "correct_answer_id": [3,4]
+    "correct_answer_id": [4,5]
   },
   {
     "question_id": 641,
@@ -944,7 +964,7 @@
   },
   {
     "question_id": 642,
-    "question_text": "A customer is deploying a new application and needs to choose an AWS Region. <br/>Which of the following factors could influence the customer's decision? (Select TWO.)",
+    "question_text": "A customer is deploying a new application and needs to choose an AWS Region. Which of the following factors could influence the customer's decision? (Select TWO.)",
     "options": [
       {
         "option_id": 1,
@@ -1059,7 +1079,7 @@
   },
   {
     "question_id": 647,
-    "question_text": "A company is looking for a scalable data warehouse solution. <br/> Which of the following AWS solutions would meet the company's needs?",
+    "question_text": "A company is looking for a scalable data warehouse solution.  Which of the following AWS solutions would meet the company's needs?",
     "options": [
       {
         "option_id": 1,
@@ -1168,13 +1188,17 @@
       {
         "option_id": 4,
         "option_text": "Amazon Glacier"
+      },
+      {
+        "option_id": 5,
+        "option_text": "Amazon CloudFront."
       }
     ],
-    "correct_answer_id": [2,3]
+    "correct_answer_id": [2,5]
   },
   {
     "question_id": 652,
-    "question_text": "Web servers running on Amazon EC2 access a legacy application running in a corporate data center. <br/> What term would describe this model?",
+    "question_text": "Web servers running on Amazon EC2 access a legacy application running in a corporate data center.  What term would describe this model?",
     "options": [
       {
         "option_id": 1,
@@ -1285,7 +1309,7 @@
         "option_text": "Automated penetration testing"
       }
     ],
-    "correct_answer_id": [1,2]
+    "correct_answer_id": [2,3]
   },
   {
     "question_id": 657,
@@ -1628,9 +1652,13 @@
       {
         "option_id": 4,
         "option_text": "Rely on individual components."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Design for scalability."
       }
     ],
-    "correct_answer_id": [3,4]
+    "correct_answer_id": [3,5]
   },
   {
     "question_id": 672,
@@ -1835,9 +1863,13 @@
       {
         "option_id": 4,
         "option_text": "Amazon EC2 Auto Scaling"
+      },
+      {
+        "option_id": 5,
+        "option_text": "AWS Management Console."
       }
     ],
-    "correct_answer_id": [2,4]
+    "correct_answer_id": [2,5]
   },
   {
     "question_id": 681,
@@ -1881,9 +1913,13 @@
       {
         "option_id": 4,
         "option_text": "Enable Amazon CloudFront."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Activate MFA."
       }
     ],
-    "correct_answer_id": [1,2]
+    "correct_answer_id": [2,5]
   },
   {
     "question_id": 683,
@@ -2065,9 +2101,13 @@
       {
         "option_id": 4,
         "option_text": "AWS Forums"
+      },
+      {
+        "option_id": 5,
+        "option_text": "AWS classroom training."
       }
     ],
-    "correct_answer_id": [1,2]
+    "correct_answer_id": [2,5]
   },
   {
     "question_id": 691,
@@ -2157,9 +2197,13 @@
       {
         "option_id": 4,
         "option_text": "AWS CloudHSM"
+      },
+      {
+        "option_id": 5,
+        "option_text": "AWS CloudWatch."
       }
     ],
-    "correct_answer_id": [1,3]
+    "correct_answer_id": [3,5]
   },
   {
     "question_id": 695,

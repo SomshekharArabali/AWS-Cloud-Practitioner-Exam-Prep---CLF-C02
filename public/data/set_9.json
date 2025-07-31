@@ -66,11 +66,11 @@
         "option_text": "AWS CloudFormation"
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,4]
   },
   {
     "question_id": 804,
-    "question_text": "A user wants guidance on possible savings when migrating from on-premises to AWS. <br/> Which tool is suitable for this scenario?",
+    "question_text": "A user wants guidance on possible savings when migrating from on-premises to AWS.  Which tool is suitable for this scenario?",
     "options": [
       {
         "option_id": 1,
@@ -112,7 +112,7 @@
         "option_text": "Test for moderate demand to ensure reliability"
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,2]
   },
   {
     "question_id": 806,
@@ -133,9 +133,13 @@
       {
         "option_id": 4,
         "option_text": "Delete AWS CloudTrail Resources."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Contact AWS Support."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,5]
   },
   {
     "question_id": 807,
@@ -185,7 +189,7 @@
   },
   {
     "question_id": 809,
-    "question_text": "A company wants to monitor the CPU usage of its Amazon EC2 resources. <br/> Which AWS service should the company use?",
+    "question_text": "A company wants to monitor the CPU usage of its Amazon EC2 resources.  Which AWS service should the company use?",
     "options": [
       {
         "option_id": 1,
@@ -248,9 +252,13 @@
       {
         "option_id": 4,
         "option_text": "Customers can upgrade instances as new types become available."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Customers can reserve capacity in an availability zone."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,5]
   },
   {
     "question_id": 812,
@@ -300,7 +308,7 @@
   },
   {
     "question_id": 814,
-    "question_text": "A customer runs an On-Demand Amazon Linux EC2 instance for 3 hours, 5 minutes, and 6 seconds. <br/> For how much time will the customer be billed?",
+    "question_text": "A customer runs an On-Demand Amazon Linux EC2 instance for 3 hours, 5 minutes, and 6 seconds.  For how much time will the customer be billed?",
     "options": [
       {
         "option_id": 1,
@@ -342,7 +350,7 @@
         "option_text": "Amazon Glacier"
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,2]
   },
   {
     "question_id": 816,
@@ -388,7 +396,7 @@
         "option_text": "AWS Storage Gateway"
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,4]
   },
   {
     "question_id": 818,
@@ -434,7 +442,7 @@
         "option_text": "Amazon RDS"
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,2]
   },
   {
     "question_id": 820,
@@ -503,7 +511,7 @@
         "option_text": "AWS Marketplace eliminates the need to upgrade to newer software versions."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,2]
   },
   {
     "question_id": 823,
@@ -547,9 +555,13 @@
       {
         "option_id": 4,
         "option_text": "Physical security of data centers"
+      },
+      {
+        "option_id": 5,
+        "option_text": "Cofiguration of security groups."
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,5]
   },
   {
     "question_id": 825,
@@ -668,7 +680,7 @@
   },
   {
     "question_id": 830,
-    "question_text": "A user is running an application on AWS and notices that one or more AWS-owned IP addresses is involved in a distributed denial-of-service (DDoS) attack. <br/> Who should the user contact FIRST about this situation?",
+    "question_text": "A user is running an application on AWS and notices that one or more AWS-owned IP addresses is involved in a distributed denial-of-service (DDoS) attack.  Who should the user contact FIRST about this situation?",
     "options": [
       {
         "option_id": 1,
@@ -710,7 +722,7 @@
         "option_text": "Users have access to free and unlimited storage."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,3]
   },
   {
     "question_id": 832,
@@ -825,7 +837,7 @@
         "option_text": "Amazon Comprehend allows users to build applications that can respond to user requests in many languages."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,3]
   },
   {
     "question_id": 837,
@@ -1032,7 +1044,7 @@
         "option_text": "Encryption usage"
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,3]
   },
   {
     "question_id": 846,
@@ -1082,7 +1094,7 @@
   },
   {
     "question_id": 848,
-    "question_text": "A Cloud Practitioner is asked how to estimate the cost of using a new application on AWS. <br/> What is the MOST appropriate response?",
+    "question_text": "A Cloud Practitioner is asked how to estimate the cost of using a new application on AWS.  What is the MOST appropriate response?",
     "options": [
       {
         "option_id": 1,
@@ -1105,7 +1117,7 @@
   },
   {
     "question_id": 849,
-    "question_text": "A company wants to migrate its applications to a VPC on AWS. These applications will need to access on-premises resources. <br/> What combination of actions will enable the company to accomplish this goal? (Choose two.)",
+    "question_text": "A company wants to migrate its applications to a VPC on AWS. These applications will need to access on-premises resources.  What combination of actions will enable the company to accomplish this goal? (Choose two.)",
     "options": [
       {
         "option_id": 1,
@@ -1124,11 +1136,11 @@
         "option_text": "Connect the company's on-premises data center to AWS using AWS Direct Connect."
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,4]
   },
   {
     "question_id": 850,
-    "question_text": "A web application running on AWS has been spammed with malicious requests from a recurring set of IP addresses. <br/> Which AWS service can help secure the application and block the malicious traffic?",
+    "question_text": "A web application running on AWS has been spammed with malicious requests from a recurring set of IP addresses.  Which AWS service can help secure the application and block the malicious traffic?",
     "options": [
       {
         "option_id": 1,
@@ -1174,7 +1186,7 @@
   },
   {
     "question_id": 852,
-    "question_text": "A company requires a dedicated network connection between its on-premises servers and the AWS Cloud. <br/> Which AWS service should be used?",
+    "question_text": "A company requires a dedicated network connection between its on-premises servers and the AWS Cloud.  Which AWS service should be used?",
     "options": [
       {
         "option_id": 1,
@@ -1266,7 +1278,7 @@
   },
   {
     "question_id": 856,
-    "question_text": "A Cloud Practitioner must determine if any security groups in an AWS account have been provisioned to allow unrestricted access for specific ports. <br/> What is the SIMPLEST way to do this?",
+    "question_text": "A Cloud Practitioner must determine if any security groups in an AWS account have been provisioned to allow unrestricted access for specific ports.  What is the SIMPLEST way to do this?",
     "options": [
       {
         "option_id": 1,
@@ -1308,11 +1320,11 @@
         "option_text": "AWS can easily accommodate application demand changes."
       }
     ],
-    "correct_answer_id": 3
+    "correct_answer_id": [3,4]
   },
   {
     "question_id": 858,
-    "question_text": "A user needs an automated security assessment report that will identify unintended network access to Amazon EC2 instances and vulnerabilities on those instances. <br/> Which AWS service will provide this assessment report?",
+    "question_text": "A user needs an automated security assessment report that will identify unintended network access to Amazon EC2 instances and vulnerabilities on those instances.  Which AWS service will provide this assessment report?",
     "options": [
       {
         "option_id": 1,
@@ -1381,7 +1393,7 @@
   },
   {
     "question_id": 861,
-    "question_text": "A Cloud Practitioner needs to store data for 7 years to meet regulatory requirements. <br/> Which AWS service will meet this requirement at the LOWEST cost?",
+    "question_text": "A Cloud Practitioner needs to store data for 7 years to meet regulatory requirements.  Which AWS service will meet this requirement at the LOWEST cost?",
     "options": [
       {
         "option_id": 1,
@@ -1423,7 +1435,7 @@
         "option_text": "Increased agility."
       }
     ],
-    "correct_answer_id": 3
+    "correct_answer_id": [3,4]
   },
   {
     "question_id": 863,
@@ -1496,7 +1508,7 @@
   },
   {
     "question_id": 866,
-    "question_text": "A system in the AWS Cloud is designed to withstand the failure of one or more components. <br/> What is this an example of?",
+    "question_text": "A system in the AWS Cloud is designed to withstand the failure of one or more components.  What is this an example of?",
     "options": [
       {
         "option_id": 1,
@@ -1519,7 +1531,7 @@
   },
   {
     "question_id": 867,
-    "question_text": "A Cloud Practitioner needs a consistent and dedicated connection between AWS resources and an on-premises system. <br/> Which AWS service can fulfill this requirement?",
+    "question_text": "A Cloud Practitioner needs a consistent and dedicated connection between AWS resources and an on-premises system.  Which AWS service can fulfill this requirement?",
     "options": [
       {
         "option_id": 1,
@@ -1630,7 +1642,7 @@
         "option_text": "By the programming language that is used for the Lambda function."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,3]
   },
   {
     "question_id": 872,
@@ -1651,9 +1663,13 @@
       {
         "option_id": 4,
         "option_text": "There are more AWS Regions than edge locations."
+      },
+      {
+        "option_id": 5,
+        "option_text": "There are more Availability Zones than AWS Regions."
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,5]
   },
   {
     "question_id": 873,
@@ -1680,7 +1696,7 @@
   },
   {
     "question_id": 874,
-    "question_text": "A company wants to build its new application workloads in the AWS Cloud instead of using on-premises resources. <br/> What expense can be reduced using the AWS Cloud?",
+    "question_text": "A company wants to build its new application workloads in the AWS Cloud instead of using on-premises resources.  What expense can be reduced using the AWS Cloud?",
     "options": [
       {
         "option_id": 1,
@@ -1722,7 +1738,7 @@
         "option_text": "Purchase AWS security and compliance documents."
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,3]
   },
   {
     "question_id": 876,
@@ -1837,7 +1853,7 @@
         "option_text": "Increased upfront capital expenditure"
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,3]
   },
   {
     "question_id": 881,
@@ -1860,7 +1876,7 @@
         "option_text": "The costs of third-party penetration testing."
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,3]
   },
   {
     "question_id": 882,

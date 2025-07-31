@@ -277,7 +277,7 @@
   },
   {
     "question_id": 413,
-    "question_text": "Which AWS service identifies security groups that allow unrestricted access to a user\u2019s AWS resources?",
+    "question_text": "Which AWS service identifies security groups that allow unrestricted access to a users AWS resources?",
     "options": [
       {
         "option_id": 1,
@@ -317,9 +317,13 @@
       {
         "option_id": 4,
         "option_text": "Rely on individual components."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Design for scalability."
       }
     ],
-    "correct_answer_id": [3,4]
+    "correct_answer_id": [3,5]
   },
   {
     "question_id": 415,
@@ -392,7 +396,7 @@
   },
   {
     "question_id": 418,
-    "question_text": "Which AWS feature will reduce the customer\u2019s total cost of ownership (TCO)?",
+    "question_text": "Which AWS feature will reduce the customers total cost of ownership (TCO)?",
     "options": [
       {
         "option_id": 1,
@@ -484,7 +488,7 @@
   },
   {
     "question_id": 422,
-    "question_text": "Under the AWS shared responsibility model, which of the following activities are the customer\u2019s responsibility? (Select TWO)",
+    "question_text": "Under the AWS shared responsibility model, which of the following activities are the customers responsibility? (Select TWO)",
     "options": [
       {
         "option_id": 1,
@@ -553,11 +557,11 @@
   },
   {
     "question_id": 425,
-    "question_text": "How do customers benefit from Amazon\u2019s massive economies of scale?",
+    "question_text": "How do customers benefit from Amazons massive economies of scale?",
     "options": [
       {
         "option_id": 1,
-        "option_text": "Periodic price reductions as the result of Amazon\u2019s operational efficiencies."
+        "option_text": "Periodic price reductions as the result of Amazons operational efficiencies."
       },
       {
         "option_id": 2,
@@ -616,9 +620,13 @@
       {
         "option_id": 4,
         "option_text": "Amazon CloudFront."
+      },
+      {
+        "option_id": 5,
+        "option_text": "AWS Direct Connect."
       }
     ],
-    "correct_answer_id": [3,4]
+    "correct_answer_id": [3,5]
   },
   {
     "question_id": 428,
@@ -708,9 +716,13 @@
       {
         "option_id": 4,
         "option_text": "AWS Organizations."
+      },
+      {
+        "option_id": 5,
+        "option_text": "NACLs."
       }
     ],
-    "correct_answer_id": [1,2]
+    "correct_answer_id": [1,5]
   },
   {
     "question_id": 432,
@@ -1168,9 +1180,13 @@
       {
         "option_id": 4,
         "option_text": "Amazon EC2 Auto Scaling."
+      },
+      {
+        "option_id": 5,
+        "option_text": "AWS management console."
       }
     ],
-    "correct_answer_id": [2,4]
+    "correct_answer_id": [2,5]
   },
   {
     "question_id": 452,
@@ -1214,9 +1230,13 @@
       {
         "option_id": 4,
         "option_text": "Real-time monitoring."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Adjustable retention."
       }
     ],
-    "correct_answer_id": [1,4]
+    "correct_answer_id": [4,5]
   },
   {
     "question_id": 454,
@@ -1266,7 +1286,7 @@
   },
   {
     "question_id": 456,
-    "question_text": "Which of the following is the customer\u2019s responsibility under the AWS shared responsibility model?",
+    "question_text": "Which of the following is the customers responsibility under the AWS shared responsibility model?",
     "options": [
       {
         "option_id": 1,
@@ -1352,9 +1372,13 @@
       {
         "option_id": 4,
         "option_text": "Planned."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Variable Cost."
       }
     ],
-    "correct_answer_id": [2,4]
+    "correct_answer_id": [2,5]
   },
   {
     "question_id": 460,
@@ -1444,9 +1468,13 @@
       {
         "option_id": 4,
         "option_text": "Amazon Redshift."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Amazon EFS."
       }
     ],
-    "correct_answer_id": [2,4]
+    "correct_answer_id": [2,5]
   },
   {
     "question_id": 464,
@@ -1515,7 +1543,7 @@
         "option_text": "15-minute response time for production system interruption cases."
       }
     ],
-    "correct_answer_id": [1,4]
+    "correct_answer_id": [1,3]
   },
   {
     "question_id": 467,
@@ -1651,6 +1679,10 @@
       {
         "option_id": 4,
         "option_text": "AWS Total Cost of Ownership (TCO) Calculator."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Cost Estimator."
       }
     ],
     "correct_answer_id": [2,3,4]
@@ -1789,9 +1821,13 @@
       {
         "option_id": 4,
         "option_text": "AWS CloudHSM."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Amazon Cloudwatch."
       }
     ],
-    "correct_answer_id": [3,1]
+    "correct_answer_id": [3,5]
   },
   {
     "question_id": 479,
@@ -1812,9 +1848,13 @@
       {
         "option_id": 4,
         "option_text": "A network file system."
+      },
+      {
+        "option_id": 5,
+        "option_text": "A durable storage system."
       }
     ],
-    "correct_answer_id": [2,4]
+    "correct_answer_id": [2,5]
     },
   {
     "question_id": 480,
@@ -2186,7 +2226,7 @@
   },
   {
     "question_id": 496,
-    "question_text": "A company\u2019s web application currently has light dependencies on underlying components so when one component fails the entire web application fails. Applying which AWS Cloud design principle will address the current design issue?",
+    "question_text": "A companys web application currently has light dependencies on underlying components so when one component fails the entire web application fails. Applying which AWS Cloud design principle will address the current design issue?",
     "options": [
       {
         "option_id": 1,

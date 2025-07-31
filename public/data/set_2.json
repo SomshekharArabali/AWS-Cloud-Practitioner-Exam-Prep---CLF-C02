@@ -18,9 +18,13 @@
       {
         "option_id": 4,
         "option_text": "Amazon ECS."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Amazon EMR."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1, 3]
   },
   {
     "question_id": 102,
@@ -156,9 +160,13 @@
       {
         "option_id": 4,
         "option_text": "Amazon EBS."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Amazon DynamoDB."
       }
     ],
-    "correct_answer_id": 3
+    "correct_answer_id": [3,5]
   },
   {
     "question_id": 108,
@@ -179,13 +187,17 @@
       {
         "option_id": 4,
         "option_text": "Read Replicas."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Edge Locations."
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2, 4]
   },
   {
     "question_id": 109,
-    "question_text": "Sarah has deployed an application in the Northern California (us-west-1) region. After examining the application\u2019s traffic, she notices that about 30% of the traffic is coming from Asia. What can she do to reduce latency for the users in Asia?",
+    "question_text": "Sarah has deployed an application in the Northern California (us-west-1) region. After examining the applications traffic, she notices that about 30% of the traffic is coming from Asia. What can she do to reduce latency for the users in Asia?",
     "options": [
       {
         "option_id": 1,
@@ -308,7 +320,7 @@
       },
       {
         "option_id": 2,
-        "option_text": "Dynamic websites\u2019 assets."
+        "option_text": "Dynamic websites assets."
       },
       {
         "option_id": 3,
@@ -317,9 +329,13 @@
       {
         "option_id": 4,
         "option_text": "Active databases."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Cached Data."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1, 3]
   },
   {
     "question_id": 115,
@@ -369,7 +385,7 @@
   },
   {
     "question_id": 117,
-    "question_text": "Under the Shared Responsibility Model, which of the following controls do customers fully inherit from AWS? (Choose TWO)",
+    "question_text": "Under the Shared Responsibility Model, which of the following controls do customers fully inherit from AWS? ",
     "options": [
       {
         "option_id": 1,
@@ -386,9 +402,13 @@
       {
         "option_id": 4,
         "option_text": "Environmental controls."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Physical controls."
       }
     ],
-    "correct_answer_id": 4
+    "correct_answer_id": [4,5]
   },
   {
     "question_id": 118,
@@ -415,7 +435,7 @@
   },
   {
     "question_id": 119,
-    "question_text": "Your application has recently experienced significant global growth, and international users are complaining of high latency. What is the AWS characteristic that can help improve your international users\u2019 experience?",
+    "question_text": "Your application has recently experienced significant global growth, and international users are complaining of high latency. What is the AWS characteristic that can help improve your international users experience?",
     "options": [
       {
         "option_id": 1,
@@ -438,7 +458,7 @@
   },
   {
     "question_id": 120,
-    "question_text": "Savings Plans are available for which of the following AWS compute services? (Choose TWO)",
+    "question_text": "Savings Plans are available for which of the following AWS compute services?",
     "options": [
       {
         "option_id": 1,
@@ -455,9 +475,13 @@
       {
         "option_id": 4,
         "option_text": "Amazon EC2."
+      },
+      {
+        "option_id": 5,
+        "option_text": "AWS Lambda."
       }
     ],
-    "correct_answer_id": 4
+    "correct_answer_id": [4,5]
   },
   {
     "question_id": 121,
@@ -503,7 +527,7 @@
         "option_text": "You can use the AWS Trusted Advisor to monitor your service limits."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id":[1, 4]
   },
   {
     "question_id": 123,
@@ -530,7 +554,7 @@
   },
   {
     "question_id": 124,
-    "question_text": "What are the connectivity options that can be used to build hybrid cloud architectures? (Choose TWO)",
+    "question_text": "What are the connectivity options that can be used to build hybrid cloud architectures?",
     "options": [
       {
         "option_id": 1,
@@ -547,9 +571,13 @@
       {
         "option_id": 4,
         "option_text": "AWS CloudTrail."
+      },
+      {
+        "option_id": 5,
+        "option_text": "AWS VPN."
       }
     ],
-    "correct_answer_id": 3
+    "correct_answer_id": [3,4]
   },
   {
     "question_id": 125,
@@ -599,7 +627,7 @@
   },
   {
     "question_id": 127,
-    "question_text": "Which of the following can help protect your EC2 instances from DDoS attacks? (Choose TWO)",
+    "question_text": "Which of the following can help protect your EC2 instances from DDoS attacks?",
     "options": [
       {
         "option_id": 1,
@@ -616,9 +644,13 @@
       {
         "option_id": 4,
         "option_text": "AWS IAM."
+      },
+      {
+        "option_id": 5,
+        "option_text": "NACLs."
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,5]
   },
   {
     "question_id": 128,
@@ -687,7 +719,7 @@
         "option_text": "EC2 instances will be billed on one day increments, with a minimum of one month."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,2]
   },
   {
     "question_id": 131,
@@ -710,7 +742,7 @@
         "option_text": "Number of buckets."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1, 2]
   },
   {
     "question_id": 132,
@@ -760,7 +792,7 @@
   },
   {
     "question_id": 134,
-    "question_text": "Which of the following statements describes the AWS Cloud\u2019s agility?",
+    "question_text": "Which of the following statements describes the AWS Clouds agility?",
     "options": [
       {
         "option_id": 1,
@@ -802,7 +834,7 @@
         "option_text": "Scales automatically to larger or smaller instance types."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id":[1, 3]
   },
   {
     "question_id": 136,
@@ -852,7 +884,7 @@
   },
   {
     "question_id": 138,
-    "question_text": "Which of the following is used to control network traffic in AWS? (Choose TWO)",
+    "question_text": "Which of the following is used to control network traffic in AWS? ",
     "options": [
       {
         "option_id": 1,
@@ -869,9 +901,13 @@
       {
         "option_id": 4,
         "option_text": "IAM Policies."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Security Groups."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,5]
   },
   {
     "question_id": 139,
@@ -986,7 +1022,7 @@
         "option_text": "AWS Elastic Beanstalk."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1, 4]
   },
   {
     "question_id": 144,
@@ -1055,7 +1091,7 @@
         "option_text": "Reserved instances provide a significant discount compared to on-demand instances."
       }
     ],
-    "correct_answer_id": [2,4]
+    "correct_answer_id": [2, 4]
   },
   {
     "question_id": 147,
@@ -1170,7 +1206,7 @@
         "option_text": "AWS Identity & Access Management."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,2]
   },
   {
     "question_id": 152,
@@ -1193,7 +1229,7 @@
         "option_text": "Amazon EMR."
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,3]
   },
   {
     "question_id": 153,
@@ -1214,9 +1250,13 @@
       {
         "option_id": 4,
         "option_text": "Operating system maintenance."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Data Management."
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,4]
   },
   {
     "question_id": 154,
@@ -1400,7 +1440,7 @@
         "option_text": "Eliminates the need to encrypt data."
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,3]
   },
   {
     "question_id": 162,
@@ -1421,13 +1461,17 @@
       {
         "option_id": 4,
         "option_text": "A media store for the CloudFront service."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Processing data streams at any scale."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,4]
   },
   {
     "question_id": 163,
-    "question_text": "What is the AWS\u2019 recommendation regarding access keys?",
+    "question_text": "What is the AWS recommendation regarding access keys?",
     "options": [
       {
         "option_id": 1,
@@ -1607,7 +1651,7 @@
         "option_text": "Operating system maintenance."
       }
     ],
-    "correct_answer_id": 3
+    "correct_answer_id": [3,4]
   },
   {
     "question_id": 171,
@@ -1722,7 +1766,7 @@
         "option_text": "The nature of the queries."
       }
     ],
-    "correct_answer_id": 3
+    "correct_answer_id": [3,4]
   },
   {
     "question_id": 176,
@@ -1743,9 +1787,13 @@
       {
         "option_id": 4,
         "option_text": "Quickly identify deleted resources and their metadata."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Track AWS spending across multiple resources."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,5]
   },
   {
     "question_id": 177,
@@ -1791,7 +1839,7 @@
         "option_text": "Use serverless architectures."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,4]
   },
   {
     "question_id": 179,
@@ -1812,9 +1860,13 @@
       {
         "option_id": 4,
         "option_text": "Maintaining consistent hardware components."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Installing and configuring third party software."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,5]
   },
   {
     "question_id": 180,
@@ -1835,9 +1887,13 @@
       {
         "option_id": 4,
         "option_text": "On-site visits for auditing."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Cost Savings."
       }
     ],
-    "correct_answer_id": 3
+    "correct_answer_id": [3,5]
   },
   {
     "question_id": 181,
@@ -1858,9 +1914,13 @@
       {
         "option_id": 4,
         "option_text": "Amazon ECS."
+      },
+      {
+        "option_id": 5,
+        "option_text": "AWS Config."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,5]
   },
   {
     "question_id": 182,
@@ -1910,7 +1970,7 @@
   },
   {
     "question_id": 184,
-    "question_text": "Both AWS and traditional IT distributors provide a wide range of virtual servers to meet their customers\u2019 requirements. What is the name of these virtual servers in AWS?",
+    "question_text": "Both AWS and traditional IT distributors provide a wide range of virtual servers to meet their customers requirements. What is the name of these virtual servers in AWS?",
     "options": [
       {
         "option_id": 1,
@@ -2019,9 +2079,13 @@
       {
         "option_id": 4,
         "option_text": "AWS removes the need to invest in operational expenditure."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Using AWS allows companies to replace large capital expenditure with low variable costs."
       }
     ],
-    "correct_answer_id": 3
+    "correct_answer_id": [3,5]
   },
   {
     "question_id": 189,
@@ -2044,7 +2108,7 @@
         "option_text": "Offers extremely low (single-digit millisecond) latency."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,4]
   },
   {
     "question_id": 190,
@@ -2067,7 +2131,7 @@
         "option_text": "Decryption."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,3]
   },
   {
     "question_id": 191,
@@ -2157,9 +2221,13 @@
       {
         "option_id": 4,
         "option_text": "Auditing and regulatory compliance."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Infrastructure Security."
       }
     ],
-    "correct_answer_id": [2,3]
+    "correct_answer_id": [3,5]
   },
   {
     "question_id": 195,
@@ -2203,9 +2271,13 @@
       {
         "option_id": 4,
         "option_text": "AWS DMS."
+      },
+      {
+        "option_id": 5,
+        "option_text": "AWS Management Console."
       }
     ],
-    "correct_answer_id": 3
+    "correct_answer_id": [3,5]
   },
   {
     "question_id": 197,

@@ -41,13 +41,17 @@
       {
         "option_id": 4,
         "option_text": "AWS Forums."
+      },
+      {
+        "option_id": 5,
+        "option_text": "AWS classroom training."
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,5]
   },
   {
     "question_id": 503,
-    "question_text": "Which of the following will enhance the security of access to the AWS Management Console\u2019? ",
+    "question_text": "Which of the following will enhance the security of access to the AWS Management Console? ",
     "options": [
       {
         "option_id": 1,
@@ -64,9 +68,13 @@
       {
         "option_id": 4,
         "option_text": "Security groups."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Password policies."
       }
     ],
-    "correct_answer_id": 3
+    "correct_answer_id": [3,5]
   },
   {
     "question_id": 504,
@@ -593,9 +601,13 @@
       {
         "option_id": 4,
         "option_text": "Enable Amazon CloudFront."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Activate MFA for privileged users."
       }
     ],
-    "correct_answer_id": [1,2]
+    "correct_answer_id": [2,5]
   },
   {
     "question_id": 527,
@@ -846,9 +858,13 @@
       {
         "option_id": 4,
         "option_text": "Amazon Glacier."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Amazon CloudFront."
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,5]
   },
   {
     "question_id": 538,
@@ -898,7 +914,7 @@
   },
   {
     "question_id": 540,
-    "question_text": "Which AWS service provides a customized view of the health of specific AWS services that power a customer\u2019s workloads running on AWS?",
+    "question_text": "Which AWS service provides a customized view of the health of specific AWS services that power a customers workloads running on AWS?",
     "options": [
       {
         "option_id": 1,
@@ -929,7 +945,7 @@
       },
       {
         "option_id": 2,
-        "option_text": "It allows the business to put a server in each customer\u2019s data center."
+        "option_text": "It allows the business to put a server in each customers data center."
       },
       {
         "option_id": 3,
@@ -1025,7 +1041,7 @@
       },
       {
         "option_id": 3,
-        "option_text": "A company\u2019s heavily used legacy database is currently running on-premises."
+        "option_text": "A companys heavily used legacy database is currently running on-premises."
       },
       {
         "option_id": 4,
@@ -1036,7 +1052,7 @@
   },
   {
     "question_id": 546,
-    "question_text": "A customer is deploying a new application and needs to choose an AWS Region. Which of the following factors could influence the customer\u2019s decision? (Select TWO)",
+    "question_text": "A customer is deploying a new application and needs to choose an AWS Region. Which of the following factors could influence the customers decision? (Select TWO)",
     "options": [
       {
         "option_id": 1,
@@ -1044,7 +1060,7 @@
       },
       {
         "option_id": 2,
-        "option_text": "The application\u2019s presentation in the local language."
+        "option_text": "The applications presentation in the local language."
       },
       {
         "option_id": 3,
@@ -1059,7 +1075,7 @@
   },
   {
     "question_id": 547,
-    "question_text": "Which AWS service provides alerts when an AWS event may impact a company\u2019s AWS resources?",
+    "question_text": "Which AWS service provides alerts when an AWS event may impact a companys AWS resources?",
     "options": [
       {
         "option_id": 1,
@@ -1105,7 +1121,7 @@
   },
   {
     "question_id": 549,
-    "question_text": "Which service\u2019s PRIMARY purpose is software version control?",
+    "question_text": "Which services PRIMARY purpose is software version control?",
     "options": [
       {
         "option_id": 1,
@@ -1335,7 +1351,7 @@
   },
   {
     "question_id": 559,
-    "question_text": "Which feature of the AWS Cloud will support an international company\u2019s requirement for low latency to all of its customers?",
+    "question_text": "Which feature of the AWS Cloud will support an international companys requirement for low latency to all of its customers?",
     "options": [
       {
         "option_id": 1,
@@ -1444,9 +1460,13 @@
       {
         "option_id": 4,
         "option_text": "Using Multi-Factor Authentication (MFA)."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Enforcing password strength and expiration."
       }
     ],
-    "correct_answer_id": [4,3]
+    "correct_answer_id": [4,5]
   },
   {
     "question_id": 564,
@@ -1558,7 +1578,7 @@
       },
       {
         "option_id": 4,
-        "option_text": "Connect the company\u2019s on-premises data center to AWS using AWS Direct Connect"
+        "option_text": "Connect the companys on-premises data center to AWS using AWS Direct Connect"
       }
     ],
     "correct_answer_id": [2,4]
@@ -1607,7 +1627,7 @@
         "option_text": "Automated penetration testing."
       }
     ],
-    "correct_answer_id": [1,2]
+    "correct_answer_id": [2,3]
   },
   {
     "question_id": 571,
@@ -1784,7 +1804,7 @@
       },
       {
         "option_id": 3,
-        "option_text": "They enable the application\u2019s stalk: content to reside closer to end users."
+        "option_text": "They enable the applications stalk: content to reside closer to end users."
       },
       {
         "option_id": 4,
@@ -1887,7 +1907,7 @@
   },
   {
     "question_id": 583,
-    "question_text": "Under the shared responsibility model which of the following areas are the customer\u2019s responsibility? (Select TWO)",
+    "question_text": "Under the shared responsibility model which of the following areas are the customers responsibility? (Select TWO)",
     "options": [
       {
         "option_id": 1,
@@ -1904,13 +1924,17 @@
       {
         "option_id": 4,
         "option_text": "Physical security of data centers."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Configuration of the security group."
       }
     ],
-    "correct_answer_id": [2, 1]
+    "correct_answer_id": [2, 5]
   },
   {
     "question_id": 584,
-    "question_text": "A company is looking for a scalable data warehouse solution. Which of the following AWS solutions would meet the company\u2019s needs?",
+    "question_text": "A company is looking for a scalable data warehouse solution. Which of the following AWS solutions would meet the companys needs?",
     "options": [
       {
         "option_id": 1,
@@ -2186,7 +2210,7 @@
   },
   {
     "question_id": 596,
-    "question_text": "A customer would like to design and build a new workload on AWS Cloud but does not have the AWS-related software technical expertise in-house. <br/>Which of the following AWS programs can a customer take advantage of to achieve that outcome?",
+    "question_text": "A customer would like to design and build a new workload on AWS Cloud but does not have the AWS-related software technical expertise in-house. Which of the following AWS programs can a customer take advantage of to achieve that outcome?",
     "options": [
       {
         "option_id": 1,

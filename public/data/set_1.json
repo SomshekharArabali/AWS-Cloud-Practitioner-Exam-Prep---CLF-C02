@@ -87,9 +87,13 @@
     {
       "option_id": 4,
       "option_text": "Providing compensation to customers if issues occur."
+    },
+    {
+      "option_id": 5,
+      "option_text": " Ability to recover quickly from failures."
     }
   ],
-  "correct_answer_id": [2, 3]
+  "correct_answer_id": [2, 5]
 },
   {
     "question_id": 5,
@@ -155,7 +159,7 @@
       },
       {
         "option_id": 4,
-        "option_text": "Deploy the application across multiple VPC\u2019s and subnets."
+        "option_text": "Deploy the application across multiple VPCs and subnets."
       }
     ],
     "correct_answer_id": 3
@@ -179,9 +183,13 @@
       {
         "option_id": 4,
         "option_text": "An Exabyte-scale data transfer service that allows you to move extremely large amounts of data to AWS."
+      },
+      {
+        "option_id": 5,
+        "option_text": " Secure transfer of large amounts of data into and out of the AWS."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1, 5]
   },
   {
     "question_id": 9,
@@ -317,9 +325,13 @@
       {
         "option_id": 4,
         "option_text": "Operating applications on behalf of customers."
+      },
+      {
+        "option_id": 5,
+        "option_text": "All of the physical security and most of the data/network security are taken care of for you."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1, 5]
   },
   {
     "question_id": 15,
@@ -373,7 +385,7 @@
     "options": [
       {
         "option_id": 1,
-        "option_text": "AWS services\u2019 costs will be reduced to half the original price."
+        "option_text": "AWS services costs will be reduced to half the original price."
       },
       {
         "option_id": 2,
@@ -409,13 +421,17 @@
       {
         "option_id": 4,
         "option_text": "Store a backup daily in an external drive."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Prevent any unauthorized access to AWS data centers."
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,3]
   },
   {
     "question_id": 19,
-    "question_text": "One of the most important AWS best-practices to follow is the cloud architecture principle of elasticity. How does this principle improve your architecture\u2019s design?",
+    "question_text": "One of the most important AWS best-practices to follow is the cloud architecture principle of elasticity. How does this principle improve your architectures design?",
     "options": [
       {
         "option_id": 1,
@@ -455,9 +471,13 @@
       {
         "option_id": 4,
         "option_text": "Configure AWS CloudTrail to automatically delete all AWS resources when the threshold is exceeded."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Configure the Amazon Connect Service to alert the company when the threshold is exceeded."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,3]
   },
   {
     "question_id": 21,
@@ -593,13 +613,17 @@
       {
         "option_id": 4,
         "option_text": "AWS WAF."
+      },
+      {
+        "option_id": 5,
+        "option_text": "AWS KMS."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,4]
   },
   {
     "question_id": 27,
-    "question_text": "A company is deploying a new two-tier web application in AWS. Where should the most frequently accessed data be stored so that the application\u2019s response time is optimal?",
+    "question_text": "A company is deploying a new two-tier web application in AWS. Where should the most frequently accessed data be stored so that the applications response time is optimal?",
     "options": [
       {
         "option_id": 1,
@@ -869,13 +893,17 @@
       {
         "option_id": 4,
         "option_text": "Configuration Management."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Data Center Operations."
       }
     ],
     "correct_answer_id": [1,4]
   },
   {
     "question_id": 39,
-    "question_text": "In order to implement best practices when dealing with a \u201cSingle Point of Failure,\u201d you should attempt to build as much automation as possible in both detecting and reacting to failure. Which of the following AWS services would help? (Choose TWO)",
+    "question_text": "In order to implement best practices when dealing with a Single Point of Failure, you should attempt to build as much automation as possible in both detecting and reacting to failure. Which of the following AWS services would help? (Choose TWO)",
     "options": [
       {
         "option_id": 1,
@@ -892,9 +920,13 @@
       {
         "option_id": 4,
         "option_text": "ECR."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Amazon EC2."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,2]
   },
   {
     "question_id": 40,
@@ -1007,13 +1039,17 @@
       {
         "option_id": 4,
         "option_text": "A dashboard detailing vulnerabilities in your applications."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Personalized view of AWS service health."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,5]
   },
   {
     "question_id": 45,
-    "question_text": "You have deployed your application on multiple Amazon EC2 instances. Your customers complain that sometimes they can\u2019t reach your application. Which AWS service allows you to monitor the performance of your EC2 instances to assist in troubleshooting these issues?",
+    "question_text": "You have deployed your application on multiple Amazon EC2 instances. Your customers complain that sometimes they cant reach your application. Which AWS service allows you to monitor the performance of your EC2 instances to assist in troubleshooting these issues?",
     "options": [
       {
         "option_id": 1,
@@ -1076,9 +1112,13 @@
       {
         "option_id": 4,
         "option_text": "Amazon S3 can be scaled manually to store and retrieve any amount of data from anywhere."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Amazon S3 provides 99.999999999% (11 9’s) of data durability."
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,4]
   },
   {
     "question_id": 48,
@@ -1099,9 +1139,13 @@
       {
         "option_id": 4,
         "option_text": "Setting password complexity rules."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Configuring network access rules."
       }
     ],
-    "correct_answer_id": 4
+    "correct_answer_id": [4,5]
   },
   {
     "question_id": 49,
@@ -1306,9 +1350,13 @@
       {
         "option_id": 4,
         "option_text": "Amazon CloudWatch."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Concierge Support Team."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,2]
   },
   {
     "question_id": 58,
@@ -1393,7 +1441,7 @@
       },
       {
         "option_id": 3,
-        "option_text": "Automate wherever possible to make architectural (\u00a9 ) experimentation easier."
+        "option_text": "Automate wherever possible to make architectural experimentation easier."
       },
       {
         "option_id": 4,
@@ -1450,7 +1498,7 @@
   },
   {
     "question_id": 64,
-    "question_text": "The principle \u201cdesign for failure and nothing will fail\u201d is very important when designing your AWS Cloud architecture. Which of the following would help adhere to this principle? (Choose TWO)",
+    "question_text": "The principle design for failure and nothing will fail is very important when designing your AWS Cloud architecture. Which of the following would help adhere to this principle? (Choose TWO)",
     "options": [
       {
         "option_id": 1,
@@ -1467,9 +1515,13 @@
       {
         "option_id": 4,
         "option_text": "Penetration testing."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Vertical Scaling."
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,3]
   },
   {
     "question_id": 65,
@@ -1513,9 +1565,13 @@
       {
         "option_id": 4,
         "option_text": "Ensuring that the underlying EC2 host is configured properly."
+      },
+      {
+        "option_id": 5,
+        "option_text": " Patching applications installed on Amazon EC2."
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,5]
   },
   {
     "question_id": 67,
@@ -1536,9 +1592,13 @@
       {
         "option_id": 4,
         "option_text": "Amazon EC2."
+      },
+      {
+        "option_id": 5,
+        "option_text": "AWS Lambda."
       }
     ],
-    "correct_answer_id": 4
+    "correct_answer_id": [4,5]
   },
   {
     "question_id": 68,
@@ -1697,9 +1757,13 @@
       {
         "option_id": 4,
         "option_text": "Automate wherever possible."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Remove single point failures."
       }
     ],
-    "correct_answer_id": 4
+    "correct_answer_id": [4, 5]
   },
   {
     "question_id": 75,
@@ -1812,9 +1876,13 @@
       {
         "option_id": 4,
         "option_text": "Configuring Access Control Lists (ACLs)."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Hardware Maintainance."
       }
     ],
-    "correct_answer_id": 3
+    "correct_answer_id": [3,5]
   },
   {
     "question_id": 80,
@@ -1904,9 +1972,13 @@
       {
         "option_id": 4,
         "option_text": "Virtualized compute resources."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Dedicated Hosting."
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,3]
   },
   {
     "question_id": 84,
@@ -1927,9 +1999,13 @@
       {
         "option_id": 4,
         "option_text": "Hardware patching."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Securing golbal physical infrastructure."
       }
     ],
-    "correct_answer_id": 4
+    "correct_answer_id": [4,5]
   },
   {
     "question_id": 85,
@@ -1964,7 +2040,7 @@
       },
       {
         "option_id": 2,
-        "option_text": "Edge locations are used by CloudFront to improve your end users\u2019 experience when uploading files."
+        "option_text": "Edge locations are used by CloudFront to improve your end users experience when uploading files."
       },
       {
         "option_id": 3,
@@ -1996,9 +2072,13 @@
       {
         "option_id": 4,
         "option_text": "AWS X-Ray."
+      },
+      {
+        "option_id": 5,
+        "option_text": "AWS Config."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,5]
   },
   {
     "question_id": 88,
@@ -2090,7 +2170,7 @@
         "option_text": "CloudFormation."
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,3]
   },
   {
     "question_id": 92,
@@ -2117,7 +2197,7 @@
   },
   {
     "question_id": 93,
-    "question_text": "What is the AWS service/feature that takes advantage of Amazon CloudFront\u2019s globally distributed edge locations to transfer files to S3 with higher upload speeds?",
+    "question_text": "What is the AWS service/feature that takes advantage of Amazon CloudFronts globally distributed edge locations to transfer files to S3 with higher upload speeds?",
     "options": [
       {
         "option_id": 1,
@@ -2180,9 +2260,13 @@
       {
         "option_id": 4,
         "option_text": "AWS Glue."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Amazon CloudFront."
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,5]
   },
   {
     "question_id": 96,
@@ -2203,9 +2287,13 @@
       {
         "option_id": 4,
         "option_text": "Patching the database software."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Installing the database software."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,3]
   },
   {
     "question_id": 97,

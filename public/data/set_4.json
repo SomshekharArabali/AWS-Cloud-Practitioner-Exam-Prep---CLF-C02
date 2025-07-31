@@ -20,7 +20,7 @@
         "option_text": "Encrypt the data prior to uploading it."
       }
     ],
-    "correct_answer_id": 3
+    "correct_answer_id":[3,4]
   },
   {
     "question_id": 302,
@@ -64,9 +64,13 @@
       {
         "option_id": 4,
         "option_text": "Creating and deleting S3 buckets."
+      },
+      {
+        "option_id": 5,
+        "option_text": "The total size in GB of all objects stored."
       }
     ],
-    "correct_answer_id": 3
+    "correct_answer_id": [3,5]
   },
   {
     "question_id": 304,
@@ -87,9 +91,13 @@
       {
         "option_id": 4,
         "option_text": "Stores archived data at very low costs."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Delivers content to end users with low latency ."
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,5]
   },
   {
     "question_id": 305,
@@ -156,9 +164,13 @@
       {
         "option_id": 4,
         "option_text": "Spot."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Standard."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,5]
   },
   {
     "question_id": 308,
@@ -273,7 +285,7 @@
         "option_text": "Amazon ECS."
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,3]
   },
   {
     "question_id": 313,
@@ -478,9 +490,13 @@
       {
         "option_id": 4,
         "option_text": "AWS CodeCommit."
+      },
+      {
+        "option_id": 5,
+        "option_text": "CloudHSM."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,5]
   },
   {
     "question_id": 322,
@@ -572,7 +588,7 @@
         "option_text": "Disposable resources instead of fixed servers."
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,5]
   },
   {
     "question_id": 326,
@@ -687,7 +703,7 @@
         "option_text": "Instance type."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,2]
   },
   {
     "question_id": 331,
@@ -733,7 +749,7 @@
         "option_text": "AWS Security Blog."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,4]
   },
   {
     "question_id": 333,
@@ -837,7 +853,7 @@
       },
       {
         "option_id": 2,
-        "option_text": "AWS applies the most common Cloud security standards, and is responsible for complying with customers\u2019 applicable laws and regulations."
+        "option_text": "AWS applies the most common Cloud security standards, and is responsible for complying with customers applicable laws and regulations."
       },
       {
         "option_id": 3,
@@ -910,14 +926,18 @@
       },
       {
         "option_id": 3,
-        "option_text": "Manage your organization\u2019s payment methods."
+        "option_text": "Manage your organizations payment methods."
       },
       {
         "option_id": 4,
         "option_text": "Help organization achieve their desired business outcomes with AWS."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Consolidated billing across multiple AWS accounts."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,5]
   },
   {
     "question_id": 341,
@@ -1055,7 +1075,7 @@
         "option_text": "Environmental controls."
       }
     ],
-    "correct_answer_id": 3
+    "correct_answer_id": [3,4]
   },
   {
     "question_id": 347,
@@ -1099,9 +1119,13 @@
       {
         "option_id": 4,
         "option_text": "Reduce the size of media assets using the Amazon Elastic Transcoder."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Store media assets in S3 and use cloudfront to distribute these assets."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,5]
   },
   {
     "question_id": 349,
@@ -1124,7 +1148,7 @@
         "option_text": "Enable real-time traceability."
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,4]
   },
   {
     "question_id": 350,
@@ -1262,7 +1286,7 @@
         "option_text": "AWS Support API."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,4]
   },
   {
     "question_id": 356,
@@ -1329,9 +1353,13 @@
       {
         "option_id": 4,
         "option_text": "Provides automatic data backups."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Can be scaled manually within shorter period of time."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,5]
   },
   {
     "question_id": 359,
@@ -1354,7 +1382,7 @@
         "option_text": "For some services, you have to pay a startup fee in order to get the service running."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,3]
   },
   {
     "question_id": 360,
@@ -1467,9 +1495,13 @@
       {
         "option_id": 4,
         "option_text": "Placement groups."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Compute time consumed."
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,5]
   },
   {
     "question_id": 365,
@@ -1492,7 +1524,7 @@
         "option_text": "A role is uniquely associated with only one person, however an IAM user is intended to be assumable by anyone who needs it."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,2]
   },
   {
     "question_id": 366,
@@ -1515,7 +1547,7 @@
         "option_text": "Changing the type of the volume."
       }
     ],
-    "correct_answer_id": 3
+    "correct_answer_id": [3,4]
   },
   {
     "question_id": 367,
@@ -1634,7 +1666,7 @@
   },
   {
     "question_id": 372,
-    "question_text": "How can you increase your application\u2019s fault-tolerance while it is being hosted in AWS?",
+    "question_text": "How can you increase your applications fault-tolerance while it is being hosted in AWS?",
     "options": [
       {
         "option_id": 1,
@@ -1674,9 +1706,13 @@
       {
         "option_id": 4,
         "option_text": "Standard."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Business."
       }
     ],
-    "correct_answer_id": 3
+    "correct_answer_id": [3,5]
   },
   {
     "question_id": 374,
@@ -1699,7 +1735,7 @@
         "option_text": "AWS account root user."
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,4]
   },
   {
     "question_id": 375,
@@ -1789,9 +1825,13 @@
       {
         "option_id": 4,
         "option_text": "Provides flexible pricing options that suit most customer needs."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Provides Software solutions that run on AWS or any other cloud vendor."
       }
     ],
-    "correct_answer_id": 4
+    "correct_answer_id": [4,5]
   },
   {
     "question_id": 379,
@@ -1818,7 +1858,7 @@
   },
   {
     "question_id": 380,
-    "question_text": "You are planning to launch an advertising campaign over the coming weekend to promote a new digital product. It is expected that there will be heavy spikes in load during the campaign period, and you can\u2019t afford any downtime. You need additional compute resources to handle the additional load. What is the most cost-effective EC2 instance purchasing option for this job?",
+    "question_text": "You are planning to launch an advertising campaign over the coming weekend to promote a new digital product. It is expected that there will be heavy spikes in load during the campaign period, and you cant afford any downtime. You need additional compute resources to handle the additional load. What is the most cost-effective EC2 instance purchasing option for this job?",
     "options": [
       {
         "option_id": 1,
@@ -1904,9 +1944,13 @@
       {
         "option_id": 4,
         "option_text": "Rotate all access keys."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Change the email address and password of the root user account and enable MFA."
       }
     ],
-    "correct_answer_id": 4
+    "correct_answer_id": [4,5]
   },
   {
     "question_id": 384,
@@ -1929,7 +1973,7 @@
         "option_text": "Provide a Chef-compatible cache to speed up application response."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,3]
   },
   {
     "question_id": 385,
@@ -1952,7 +1996,7 @@
         "option_text": "Use Elastic Load Balancing."
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,5]
   },
   {
     "question_id": 386,
@@ -1968,14 +2012,18 @@
       },
       {
         "option_id": 3,
-        "option_text": "They remove the need to buy \u201csafety net\u201d capacity to handle periodic traffic spikes."
+        "option_text": "They remove the need to buy safety net capacity to handle periodic traffic spikes."
       },
       {
         "option_id": 4,
         "option_text": "They only require 1-2 days for setup and configuration."
+      },
+      {
+        "option_id": 5,
+        "option_text": "You can increase or decrease your compute capacity depending on the demands of your application."
       }
     ],
-    "correct_answer_id": 3
+    "correct_answer_id": [3,5]
   },
   {
     "question_id": 387,
@@ -1995,7 +2043,7 @@
       },
       {
         "option_id": 4,
-        "option_text": "It is a distinct location within a region that is insulated from \u00ab failures in other Availability Zones."
+        "option_text": "It is a distinct location within a region that is insulated from failures in other Availability Zones."
       }
     ],
     "correct_answer_id": 4
@@ -2025,7 +2073,7 @@
   },
   {
     "question_id": 389,
-    "question_text": "A financial services company decides to migrate one of its applications to AWS. The application deals with sensitive data, such as credit card information, and must run on a PCI-compliant environment. Which of the following is the company\u2019s responsibility when building a PCI-compliant environment in AWS? (Choose TWO)",
+    "question_text": "A financial services company decides to migrate one of its applications to AWS. The application deals with sensitive data, such as credit card information, and must run on a PCI-compliant environment. Which of the following is the companys responsibility when building a PCI-compliant environment in AWS? (Choose TWO)",
     "options": [
       {
         "option_id": 1,
@@ -2044,7 +2092,7 @@
         "option_text": "Configure the underlying infrastructure of AWS services to meet all PCI DSS requirements."
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,3]
   },
   {
     "question_id": 390,
@@ -2125,7 +2173,7 @@
       },
       {
         "option_id": 2,
-        "option_text": "Request and wait for approval from the customer\u2019s internal security team, and then conduct testing."
+        "option_text": "Request and wait for approval from the customers internal security team, and then conduct testing."
       },
       {
         "option_id": 3,
@@ -2209,7 +2257,7 @@
   },
   {
     "question_id": 397,
-    "question_text": "The AWS Cloud\u2019s multiple Regions are an example of:",
+    "question_text": "The AWS Clouds multiple Regions are an example of:",
     "options": [
       {
         "option_id": 1,

@@ -24,7 +24,7 @@
   },
   {
     "question_id": 1002,
-    "question_text": "A company has deployed several relational databases on Amazon EC2 instances. Every month, the database software vendor releases new security patches that need to be applied to the databases. <br/> What is the MOST efficient way to apply the security patches?",
+    "question_text": "A company has deployed several relational databases on Amazon EC2 instances. Every month, the database software vendor releases new security patches that need to be applied to the databases.  What is the MOST efficient way to apply the security patches?",
     "options": [
       {
         "option_id": 1,
@@ -47,7 +47,7 @@
   },
   {
     "question_id": 1003,
-    "question_text": "A company wants to use Amazon Elastic Compute Cloud (Amazon EC2) to deploy a global commercial application. The deployment solution should be built with the highest redundancy and fault tolerance. <br/> Based on this situation, the Amazon EC2 instances should be deployed:",
+    "question_text": "A company wants to use Amazon Elastic Compute Cloud (Amazon EC2) to deploy a global commercial application. The deployment solution should be built with the highest redundancy and fault tolerance.  Based on this situation, the Amazon EC2 instances should be deployed:",
     "options": [
       {
         "option_id": 1,
@@ -70,7 +70,7 @@
   },
   {
     "question_id": 1004,
-    "question_text": "A company has an application with users in both Australia and Brazil. All the company infrastructure is currently provisioned in the Asia Pacific (Sydney) Region in Australia, and Brazilian users are experiencing high latency. <br/> What should the company do to reduce latency?",
+    "question_text": "A company has an application with users in both Australia and Brazil. All the company infrastructure is currently provisioned in the Asia Pacific (Sydney) Region in Australia, and Brazilian users are experiencing high latency.  What should the company do to reduce latency?",
     "options": [
       {
         "option_id": 1,
@@ -78,7 +78,7 @@
       },
       {
         "option_id": 2,
-        "option_text": "Provision resources in the South America (S\u00e3o Paulo) Region in Brazil."
+        "option_text": "Provision resources in the South America (Sao Paulo) Region in Brazil."
       },
       {
         "option_id": 3,
@@ -93,7 +93,7 @@
   },
   {
     "question_id": 1005,
-    "question_text": "An Amazon EC2 instance runs only when needed yet must remain active for the duration of the process. <br/> What is the most appropriate purchasing option?",
+    "question_text": "An Amazon EC2 instance runs only when needed yet must remain active for the duration of the process.  What is the most appropriate purchasing option?",
     "options": [
       {
         "option_id": 1,
@@ -342,7 +342,7 @@
         "option_text": "AWS OpsWorks"
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,4]
   },
   {
     "question_id": 1016,
@@ -369,7 +369,7 @@
   },
   {
     "question_id": 1017,
-    "question_text": "A user would like to encrypt data that is received, stored, and managed by AWS CloudTrail. <br/> Which AWS service will provide this capability?",
+    "question_text": "A user would like to encrypt data that is received, stored, and managed by AWS CloudTrail.  Which AWS service will provide this capability?",
     "options": [
       {
         "option_id": 1,
@@ -434,7 +434,7 @@
         "option_text": "A user ID"
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,3]
   },
   {
     "question_id": 1020,
@@ -576,7 +576,7 @@
   },
   {
     "question_id": 1026,
-    "question_text": "A company has distributed its workload on both the AWS Cloud and some on-premises servers. <br/> What type of architecture is this?",
+    "question_text": "A company has distributed its workload on both the AWS Cloud and some on-premises servers.  What type of architecture is this?",
     "options": [
       {
         "option_id": 1,
@@ -668,7 +668,7 @@
   },
   {
     "question_id": 1030,
-    "question_text": "A company needs protection from expanded distributed denial of service (DDoS) attacks on its website and assistance from AWS experts during such events. <br/> Which AWS managed service will meet these requirements?",
+    "question_text": "A company needs protection from expanded distributed denial of service (DDoS) attacks on its website and assistance from AWS experts during such events.  Which AWS managed service will meet these requirements?",
     "options": [
       {
         "option_id": 1,
@@ -691,7 +691,7 @@
   },
   {
     "question_id": 1031,
-    "question_text": "A company's application has flexible start and end times. <br/> Which Amazon EC2 pricing model will be the MOST cost-effective?",
+    "question_text": "A company's application has flexible start and end times.  Which Amazon EC2 pricing model will be the MOST cost-effective?",
     "options": [
       {
         "option_id": 1,
@@ -731,9 +731,13 @@
       {
         "option_id": 4,
         "option_text": "Security of data in transit"
+      },
+      {
+        "option_id": 5,
+        "option_text": "Data integrity authentication."
       }
     ],
-    "correct_answer_id": 4
+    "correct_answer_id": [4,5]
   },
   {
     "question_id": 1033,
@@ -806,7 +810,7 @@
   },
   {
     "question_id": 1036,
-    "question_text": "A company with a Developer-level AWS Support plan provisioned an Amazon RDS database and cannot connect to it. <br/> Who should the developer contact for this level of support?",
+    "question_text": "A company with a Developer-level AWS Support plan provisioned an Amazon RDS database and cannot connect to it.  Who should the developer contact for this level of support?",
     "options": [
       {
         "option_id": 1,
@@ -852,7 +856,7 @@
   },
   {
     "question_id": 1038,
-    "question_text": "A company must ensure that its endpoint for a database instance remains the same after a single Availability Zone service interruption. The application needs to resume database operations without the need for manual administrative intervention. <br/> How can these requirements be met?",
+    "question_text": "A company must ensure that its endpoint for a database instance remains the same after a single Availability Zone service interruption. The application needs to resume database operations without the need for manual administrative intervention.  How can these requirements be met?",
     "options": [
       {
         "option_id": 1,
@@ -917,7 +921,7 @@
         "option_text": "Performance"
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,4]
   },
   {
     "question_id": 1041,
@@ -940,7 +944,7 @@
         "option_text": "Attaching a role to an Amazon EC2 instance"
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,3]
   },
   {
     "question_id": 1042,
@@ -967,7 +971,7 @@
   },
   {
     "question_id": 1043,
-    "question_text": "A company operating in the AWS Cloud requires separate invoices for specific environments, such as development, testing, and production. <br/> How can this be achieved?",
+    "question_text": "A company operating in the AWS Cloud requires separate invoices for specific environments, such as development, testing, and production.  How can this be achieved?",
     "options": [
       {
         "option_id": 1,
@@ -1032,11 +1036,11 @@
         "option_text": "Reserved Instances for sustained workloads"
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,4]
   },
   {
     "question_id": 1046,
-    "question_text": "A company is launching an e-commerce site that will store and process credit card data. The company requires information about AWS compliance reports and AWS agreements. <br/> Which AWS service provides on-demand access to these items?",
+    "question_text": "A company is launching an e-commerce site that will store and process credit card data. The company requires information about AWS compliance reports and AWS agreements.  Which AWS service provides on-demand access to these items?",
     "options": [
       {
         "option_id": 1,
@@ -1105,7 +1109,7 @@
   },
   {
     "question_id": 1049,
-    "question_text": "A user needs to regularly audit and evaluate the setup of all AWS resources, identify non-compliant accounts, and be notified when a resource changes. <br/> Which AWS service can be used to meet these requirements?",
+    "question_text": "A user needs to regularly audit and evaluate the setup of all AWS resources, identify non-compliant accounts, and be notified when a resource changes.  Which AWS service can be used to meet these requirements?",
     "options": [
       {
         "option_id": 1,
@@ -1128,7 +1132,7 @@
   },
   {
     "question_id": 1050,
-    "question_text": "A user is planning to launch two additional Amazon EC2 instances to increase availability. <br/> Which action should the user take?",
+    "question_text": "A user is planning to launch two additional Amazon EC2 instances to increase availability.  Which action should the user take?",
     "options": [
       {
         "option_id": 1,
@@ -1151,7 +1155,7 @@
   },
   {
     "question_id": 1051,
-    "question_text": "A company must store critical business data in Amazon S3 with a backup to another AWS Region. <br/> How can this be achieved?",
+    "question_text": "A company must store critical business data in Amazon S3 with a backup to another AWS Region.  How can this be achieved?",
     "options": [
       {
         "option_id": 1,
@@ -1220,7 +1224,7 @@
   },
   {
     "question_id": 1054,
-    "question_text": "A user needs to automatically discover, classify, and protect sensitive data stored in Amazon S3. <br/> Which AWS service can meet these requirements?",
+    "question_text": "A user needs to automatically discover, classify, and protect sensitive data stored in Amazon S3.  Which AWS service can meet these requirements?",
     "options": [
       {
         "option_id": 1,
@@ -1260,9 +1264,13 @@
       {
         "option_id": 4,
         "option_text": "Transit gateway"
+      },
+      {
+        "option_id": 5,
+        "option_text": "Virtual Private Gateway."
       }
     ],
-    "correct_answer_id": 3
+    "correct_answer_id": [3,5]
   },
   {
     "question_id": 1056,
@@ -1423,7 +1431,7 @@
         "option_text": "Amazon DynamoDB"
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,4]
   },
   {
     "question_id": 1063,
@@ -1446,7 +1454,7 @@
         "option_text": "Amazon Connect"
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,3]
   },
   {
     "question_id": 1064,
@@ -1496,7 +1504,7 @@
   },
   {
     "question_id": 1066,
-    "question_text": "During a compliance review, one of the auditors requires a copy of the AWS SOC 2 report. <br/> Which service should be used to submit this request?",
+    "question_text": "During a compliance review, one of the auditors requires a copy of the AWS SOC 2 report.  Which service should be used to submit this request?",
     "options": [
       {
         "option_id": 1,
@@ -1519,7 +1527,7 @@
   },
   {
     "question_id": 1067,
-    "question_text": "A company wants to set up a highly available workload in AWS with a disaster recovery plan that will allow the company to recover in case of a regional service interruption. <br/> Which configuration will meet these requirements?",
+    "question_text": "A company wants to set up a highly available workload in AWS with a disaster recovery plan that will allow the company to recover in case of a regional service interruption.  Which configuration will meet these requirements?",
     "options": [
       {
         "option_id": 1,
@@ -1538,11 +1546,11 @@
         "option_text": "Run across two AWS Regions, using a third AWS Region for the disaster recovery site."
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,4]
   },
   {
     "question_id": 1068,
-    "question_text": "A company has a 500 TB image repository that needs to be transported to AWS for processing. <br/> Which AWS service can import this data MOST cost-effectively?",
+    "question_text": "A company has a 500 TB image repository that needs to be transported to AWS for processing.  Which AWS service can import this data MOST cost-effectively?",
     "options": [
       {
         "option_id": 1,
@@ -1607,11 +1615,11 @@
         "option_text": "Using AWS Trusted Advisor"
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,2]
   },
   {
     "question_id": 1071,
-    "question_text": "A company wants to allow full access to an Amazon S3 bucket for a particular user. <br/> Which element in the S3 bucket policy holds the user details that describe who needs access to the S3 bucket?",
+    "question_text": "A company wants to allow full access to an Amazon S3 bucket for a particular user.  Which element in the S3 bucket policy holds the user details that describe who needs access to the S3 bucket?",
     "options": [
       {
         "option_id": 1,
@@ -1657,7 +1665,7 @@
   },
   {
     "question_id": 1073,
-    "question_text": "A company is piloting a new customer-facing application on Amazon Elastic Compute Cloud (Amazon EC2) for one month. <br/> What pricing model is appropriate?",
+    "question_text": "A company is piloting a new customer-facing application on Amazon Elastic Compute Cloud (Amazon EC2) for one month.  What pricing model is appropriate?",
     "options": [
       {
         "option_id": 1,
@@ -1841,7 +1849,7 @@
   },
   {
     "question_id": 1081,
-    "question_text": "An architecture design includes Amazon EC2, an Elastic Load Balancer, and Amazon RDS. <br/> What is the BEST way to get a monthly cost estimation for this architecture?",
+    "question_text": "An architecture design includes Amazon EC2, an Elastic Load Balancer, and Amazon RDS.  What is the BEST way to get a monthly cost estimation for this architecture?",
     "options": [
       {
         "option_id": 1,
@@ -1883,7 +1891,7 @@
         "option_text": "Software patching"
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,4]
   },
   {
     "question_id": 1083,
@@ -1910,7 +1918,7 @@
   },
   {
     "question_id": 1084,
-    "question_text": "A company has multiple data sources across the organization and wants to consolidate data into one data warehouse. <br/> Which AWS service can be used to meet this requirement?",
+    "question_text": "A company has multiple data sources across the organization and wants to consolidate data into one data warehouse.  Which AWS service can be used to meet this requirement?",
     "options": [
       {
         "option_id": 1,
@@ -1956,7 +1964,7 @@
   },
   {
     "question_id": 1086,
-    "question_text": "A user has underutilized on-premises resources. <br/> Which AWS Cloud concept can BEST address this issue?",
+    "question_text": "A user has underutilized on-premises resources.  Which AWS Cloud concept can BEST address this issue?",
     "options": [
       {
         "option_id": 1,
@@ -1979,7 +1987,7 @@
   },
   {
     "question_id": 1087,
-    "question_text": "A user has a stateful workload that will run on Amazon EC2 for the next 3 years. <br/> What is the MOST cost-effective pricing model for this workload?",
+    "question_text": "A user has a stateful workload that will run on Amazon EC2 for the next 3 years.  What is the MOST cost-effective pricing model for this workload?",
     "options": [
       {
         "option_id": 1,
@@ -2002,7 +2010,7 @@
   },
   {
     "question_id": 1088,
-    "question_text": "A cloud practitioner needs an Amazon EC2 instance to launch and run for 7 hours without interruptions. <br/> What is the most suitable and cost-effective option for this task?",
+    "question_text": "A cloud practitioner needs an Amazon EC2 instance to launch and run for 7 hours without interruptions.  What is the most suitable and cost-effective option for this task?",
     "options": [
       {
         "option_id": 1,
@@ -2044,11 +2052,11 @@
         "option_text": "Improving security by proactively monitoring the AWS environment"
       }
     ],
-    "correct_answer_id": 3
+    "correct_answer_id": [3,4]
   },
   {
     "question_id": 1090,
-    "question_text": "A developer has been hired by a large company and needs AWS credentials. <br/> Which are security best practices that should be followed? (Choose two.)",
+    "question_text": "A developer has been hired by a large company and needs AWS credentials.  Which are security best practices that should be followed? (Choose two.)",
     "options": [
       {
         "option_id": 1,
@@ -2065,9 +2073,13 @@
       {
         "option_id": 4,
         "option_text": "Configure a password policy that ensures the developer's password cannot be changed."
+      },
+      {
+        "option_id": 5,
+        "option_text": "Ensure the account password policy requires a minimum length."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,5]
   },
   {
     "question_id": 1091,
@@ -2117,7 +2129,7 @@
   },
   {
     "question_id": 1093,
-    "question_text": "A user is planning to migrate an application workload to the AWS Cloud. <br/> Which control becomes the responsibility of AWS once the migration is complete?",
+    "question_text": "A user is planning to migrate an application workload to the AWS Cloud.  Which control becomes the responsibility of AWS once the migration is complete?",
     "options": [
       {
         "option_id": 1,
@@ -2159,7 +2171,7 @@
         "option_text": "AWS Application Discovery Service"
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,3]
   },
   {
     "question_id": 1095,
@@ -2255,7 +2267,7 @@
   },
   {
     "question_id": 1099,
-    "question_text": "A company has a MySQL database running on a single Amazon EC2 instance. The company now requires higher availability in the event of an outage. <br/> Which set of tasks would meet this requirement?",
+    "question_text": "A company has a MySQL database running on a single Amazon EC2 instance. The company now requires higher availability in the event of an outage.  Which set of tasks would meet this requirement?",
     "options": [
       {
         "option_id": 1,
@@ -2278,7 +2290,7 @@
   },
   {
     "question_id": 1100,
-    "question_text": "A company wants to ensure that AWS Management Console users are meeting password complexity requirements. <br/> How can the company configure password complexity?",
+    "question_text": "A company wants to ensure that AWS Management Console users are meeting password complexity requirements.  How can the company configure password complexity?",
     "options": [
       {
         "option_id": 1,

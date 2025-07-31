@@ -43,7 +43,7 @@
         "option_text": "AWS Server Migration Service (AWS SMS) to move Amazon EC2 instances into a different Region"
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,3]
   },
   {
     "question_id": 903,
@@ -89,11 +89,11 @@
         "option_text": "Require IAM users to store their passwords in raw text"
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,2]
   },
   {
     "question_id": 905,
-    "question_text": "A company is migrating from on-premises data centers to the AWS Cloud and is looking for hands-on help with the project. <br/> How can the company get this support? (Choose two.)",
+    "question_text": "A company is migrating from on-premises data centers to the AWS Cloud and is looking for hands-on help with the project.  How can the company get this support? (Choose two.)",
     "options": [
       {
         "option_id": 1,
@@ -112,7 +112,7 @@
         "option_text": "Select a partner from the AWS Partner Network (APN) to assist with the migration"
       }
     ],
-    "correct_answer_id": 3
+    "correct_answer_id": [3,4]
   },
   {
     "question_id": 906,
@@ -162,7 +162,7 @@
   },
   {
     "question_id": 908,
-    "question_text": "A new service using AWS must be highly available. Yet, due to regulatory requirements, all of its Amazon EC2 instances must be located in a single geographic area. <br/> According to best practices, to meet these requirements, the EC2 instances must be placed in at least two:",
+    "question_text": "A new service using AWS must be highly available. Yet, due to regulatory requirements, all of its Amazon EC2 instances must be located in a single geographic area.  According to best practices, to meet these requirements, the EC2 instances must be placed in at least two:",
     "options": [
       {
         "option_id": 1,
@@ -208,7 +208,7 @@
   },
   {
     "question_id": 910,
-    "question_text": "A company has multiple AWS accounts within AWS Organizations and wants to apply the Amazon EC2 Reserved Instances benefit to a single account only. <br/> Which action should be taken?",
+    "question_text": "A company has multiple AWS accounts within AWS Organizations and wants to apply the Amazon EC2 Reserved Instances benefit to a single account only.  Which action should be taken?",
     "options": [
       {
         "option_id": 1,
@@ -254,7 +254,7 @@
   },
   {
     "question_id": 912,
-    "question_text": "A company is planning to launch an ecommerce site in a single AWS Region to a worldwide user base. <br/> Which AWS services will allow the company to reach users and provide low latency and high transfer speeds? (Choose two.)",
+    "question_text": "A company is planning to launch an ecommerce site in a single AWS Region to a worldwide user base.  Which AWS services will allow the company to reach users and provide low latency and high transfer speeds? (Choose two.)",
     "options": [
       {
         "option_id": 1,
@@ -273,7 +273,7 @@
         "option_text": "Amazon CloudFront"
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,4]
   },
   {
     "question_id": 913,
@@ -319,7 +319,7 @@
         "option_text": "Internet gateways"
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,4]
   },
   {
     "question_id": 915,
@@ -363,9 +363,13 @@
       {
         "option_id": 4,
         "option_text": "Security groups"
+      },
+      {
+        "option_id": 5,
+        "option_text": "Password Policies."
       }
     ],
-    "correct_answer_id": 3
+    "correct_answer_id": [3,5]
   },
   {
     "question_id": 917,
@@ -388,7 +392,7 @@
         "option_text": "Available software patches"
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,3]
   },
   {
     "question_id": 918,
@@ -434,7 +438,7 @@
         "option_text": "It automatically corrects potential security issues caused by permissions settings on account resources"
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,3]
   },
   {
     "question_id": 920,
@@ -457,11 +461,11 @@
         "option_text": "AWS manages the development of applications on AWS"
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,3]
   },
   {
     "question_id": 921,
-    "question_text": "A user deploys an Amazon RDS DB instance in multiple Availability Zones. <br/> This strategy involves which pillar of the AWS Well-Architected Framework?",
+    "question_text": "A user deploys an Amazon RDS DB instance in multiple Availability Zones.  This strategy involves which pillar of the AWS Well-Architected Framework?",
     "options": [
       {
         "option_id": 1,
@@ -503,7 +507,7 @@
         "option_text": "AWS Direct Connect"
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,2]
   },
   {
     "question_id": 923,
@@ -622,7 +626,7 @@
   },
   {
     "question_id": 928,
-    "question_text": "A company wants to migrate a MySQL database to AWS but does not have the budget for Database Administrators to handle routine tasks including provisioning, patching, and performing backups. <br/> Which AWS service will support this use case?",
+    "question_text": "A company wants to migrate a MySQL database to AWS but does not have the budget for Database Administrators to handle routine tasks including provisioning, patching, and performing backups.  Which AWS service will support this use case?",
     "options": [
       {
         "option_id": 1,
@@ -645,7 +649,7 @@
   },
   {
     "question_id": 929,
-    "question_text": "A company wants to expand from one AWS Region into a second AWS Region. <br/> What does the company need to do to start supporting the new Region?",
+    "question_text": "A company wants to expand from one AWS Region into a second AWS Region.  What does the company need to do to start supporting the new Region?",
     "options": [
       {
         "option_id": 1,
@@ -668,7 +672,7 @@
   },
   {
     "question_id": 930,
-    "question_text": "A user must meet compliance and software licensing requirements that state a workload must be hosted on a physical server. <br/> Which Amazon EC2 instance pricing option will meet these requirements?",
+    "question_text": "A user must meet compliance and software licensing requirements that state a workload must be hosted on a physical server.  Which Amazon EC2 instance pricing option will meet these requirements?",
     "options": [
       {
         "option_id": 1,
@@ -708,13 +712,17 @@
       {
         "option_id": 4,
         "option_text": "AWS Secrets Manager"
+      },
+      {
+        "option_id": 5,
+        "option_text": "AWS CloudHSM."
       }
     ],
-    "correct_answer_id": 3
+    "correct_answer_id": [3,5]
   },
   {
     "question_id": 932,
-    "question_text": "A company is planning to migrate from on-premises to the AWS Cloud. <br/> Which AWS tool or service provides detailed reports on estimated cost savings after migration?",
+    "question_text": "A company is planning to migrate from on-premises to the AWS Cloud.  Which AWS tool or service provides detailed reports on estimated cost savings after migration?",
     "options": [
       {
         "option_id": 1,
@@ -756,7 +764,7 @@
         "option_text": "AWS Partner Network (APN)"
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,4]
   },
   {
     "question_id": 934,
@@ -800,9 +808,13 @@
       {
         "option_id": 4,
         "option_text": "Controlling physical access to data centers"
+      },
+      {
+        "option_id": 5,
+        "option_text": "Patch management of EC2 instance operating system ."
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,5]
   },
   {
     "question_id": 936,
@@ -894,7 +906,7 @@
   },
   {
     "question_id": 940,
-    "question_text": "A company that does business online needs to quickly deliver new functionality in an iterative manner, minimizing the time to market. <br/> Which AWS Cloud feature can provide this?",
+    "question_text": "A company that does business online needs to quickly deliver new functionality in an iterative manner, minimizing the time to market.  Which AWS Cloud feature can provide this?",
     "options": [
       {
         "option_id": 1,
@@ -936,7 +948,7 @@
         "option_text": "Billing alerts and Amazon CloudWatch alarms"
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,4]
   },
   {
     "question_id": 942,
@@ -986,7 +998,7 @@
   },
   {
     "question_id": 944,
-    "question_text": "A company wants to try a third-party ecommerce solution before deciding to use it long term. <br/> Which AWS service or tool will support this effort?",
+    "question_text": "A company wants to try a third-party ecommerce solution before deciding to use it long term.  Which AWS service or tool will support this effort?",
     "options": [
       {
         "option_id": 1,
@@ -1055,7 +1067,7 @@
   },
   {
     "question_id": 947,
-    "question_text": "A company is hosting a web application in a Docker container on Amazon EC2. <br/> AWS is responsible for which of the following tasks?",
+    "question_text": "A company is hosting a web application in a Docker container on Amazon EC2.  AWS is responsible for which of the following tasks?",
     "options": [
       {
         "option_id": 1,
@@ -1078,7 +1090,7 @@
   },
   {
     "question_id": 948,
-    "question_text": "Users are reporting latency when connecting to a website with a global customer base. <br/> Which AWS service will improve the customer experience by reducing latency?",
+    "question_text": "Users are reporting latency when connecting to a website with a global customer base.  Which AWS service will improve the customer experience by reducing latency?",
     "options": [
       {
         "option_id": 1,
@@ -1120,7 +1132,7 @@
         "option_text": "Rotate access keys on a regular basis"
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,4]
   },
   {
     "question_id": 950,
@@ -1147,7 +1159,7 @@
   },
   {
     "question_id": 951,
-    "question_text": "A company wants to use an AWS service to monitor the health of application endpoints, with the ability to route traffic to healthy regional endpoints to improve application availability. <br/> Which service will support these requirements?",
+    "question_text": "A company wants to use an AWS service to monitor the health of application endpoints, with the ability to route traffic to healthy regional endpoints to improve application availability.  Which service will support these requirements?",
     "options": [
       {
         "option_id": 1,
@@ -1189,7 +1201,7 @@
         "option_text": "Use AWS Certificate Manager to whitelist approved AWS resources and services"
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,3]
   },
   {
     "question_id": 953,
@@ -1258,11 +1270,11 @@
         "option_text": "AWS Database Migration Service (AWS DMS)"
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,4]
   },
   {
     "question_id": 956,
-    "question_text": "A batch workload takes 5 hours to finish on an Amazon EC2 instance. The amount of data to be processed doubles monthly and the processing time is proportional. <br/> What is the best cloud architecture to address this consistently growing demand?",
+    "question_text": "A batch workload takes 5 hours to finish on an Amazon EC2 instance. The amount of data to be processed doubles monthly and the processing time is proportional.  What is the best cloud architecture to address this consistently growing demand?",
     "options": [
       {
         "option_id": 1,
@@ -1285,7 +1297,7 @@
   },
   {
     "question_id": 957,
-    "question_text": "Each department within a company has its own independent AWS account and its own payment method. New company leadership wants to centralize departmental governance and consolidate payments. <br/> How can this be achieved using AWS services or features?",
+    "question_text": "Each department within a company has its own independent AWS account and its own payment method. New company leadership wants to centralize departmental governance and consolidate payments.  How can this be achieved using AWS services or features?",
     "options": [
       {
         "option_id": 1,
@@ -1331,7 +1343,7 @@
   },
   {
     "question_id": 959,
-    "question_text": "An ecommerce company anticipates a huge increase in web traffic for two very popular upcoming shopping holidays. <br/> Which AWS service or feature can be configured to dynamically adjust resources to meet this change in demand?",
+    "question_text": "An ecommerce company anticipates a huge increase in web traffic for two very popular upcoming shopping holidays.  Which AWS service or feature can be configured to dynamically adjust resources to meet this change in demand?",
     "options": [
       {
         "option_id": 1,
@@ -1400,7 +1412,7 @@
   },
   {
     "question_id": 962,
-    "question_text": "A company is running an ecommerce application hosted in Europe. To decrease latency for users who access the website from other parts of the world, the company would like to cache frequently accessed static content closer to the users. <br/> Which AWS service will support these requirements?",
+    "question_text": "A company is running an ecommerce application hosted in Europe. To decrease latency for users who access the website from other parts of the world, the company would like to cache frequently accessed static content closer to the users.  Which AWS service will support these requirements?",
     "options": [
       {
         "option_id": 1,
@@ -1509,13 +1521,17 @@
       {
         "option_id": 4,
         "option_text": "Networking infrastructure protection"
+      },
+      {
+        "option_id": 5,
+        "option_text": "Security groups configuration."
       }
     ],
-    "correct_answer_id": 3
+    "correct_answer_id": [3,5]
   },
   {
     "question_id": 967,
-    "question_text": "IT systems should be designed to reduce interdependencies, so that a change or failure in one component does not cascade to other components. <br/> This is an example of which principle of cloud architecture design?",
+    "question_text": "IT systems should be designed to reduce interdependencies, so that a change or failure in one component does not cascade to other components.  This is an example of which principle of cloud architecture design?",
     "options": [
       {
         "option_id": 1,
@@ -1555,13 +1571,17 @@
       {
         "option_id": 4,
         "option_text": "AWS Organizations"
+      },
+      {
+        "option_id": 5,
+        "option_text": "NACLs."
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,5]
   },
   {
     "question_id": 969,
-    "question_text": "An application runs on multiple Amazon EC2 instances that access a shared file system simultaneously. <br/> Which AWS storage service should be used?",
+    "question_text": "An application runs on multiple Amazon EC2 instances that access a shared file system simultaneously.  Which AWS storage service should be used?",
     "options": [
       {
         "option_id": 1,
@@ -1584,7 +1604,7 @@
   },
   {
     "question_id": 970,
-    "question_text": "A web application is hosted on AWS using an Elastic Load Balancer, multiple Amazon EC2 instances, and Amazon RDS. <br/> Which security measures fall under the responsibility of AWS? (Choose two.)",
+    "question_text": "A web application is hosted on AWS using an Elastic Load Balancer, multiple Amazon EC2 instances, and Amazon RDS.  Which security measures fall under the responsibility of AWS? (Choose two.)",
     "options": [
       {
         "option_id": 1,
@@ -1603,7 +1623,7 @@
         "option_text": "Encrypting communication between the EC2 instances and the Elastic Load Balancer"
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,3]
   },
   {
     "question_id": 971,
@@ -1653,7 +1673,7 @@
   },
   {
     "question_id": 973,
-    "question_text": "A company needs an Amazon S3 bucket that cannot have any public objects due to compliance requirements. <br/> How can this be accomplished?",
+    "question_text": "A company needs an Amazon S3 bucket that cannot have any public objects due to compliance requirements.  How can this be accomplished?",
     "options": [
       {
         "option_id": 1,
@@ -1676,7 +1696,7 @@
   },
   {
     "question_id": 974,
-    "question_text": "A Cloud Practitioner identifies a billing issue after examining the AWS Cost and Usage report in the AWS Management Console. <br/> Which action can be taken to resolve this?",
+    "question_text": "A Cloud Practitioner identifies a billing issue after examining the AWS Cost and Usage report in the AWS Management Console.  Which action can be taken to resolve this?",
     "options": [
       {
         "option_id": 1,
@@ -1764,7 +1784,7 @@
         "option_text": "Amazon Route 53"
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,2]
   },
   {
     "question_id": 978,
@@ -1787,7 +1807,7 @@
         "option_text": "Decreased latency to reach applications deployed on AWS"
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,4]
   },
   {
     "question_id": 979,
@@ -1902,7 +1922,7 @@
         "option_text": "Switch automatically to Reserved Instances or Spot Instances, whichever is most cost-effective."
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,3]
   },
   {
     "question_id": 984,
@@ -2113,7 +2133,7 @@
   },
   {
     "question_id": 993,
-    "question_text": "A user needs to quickly deploy a non-relational database on AWS. The user does not want to manage the underlying hardware or the database software. <br/> Which AWS service can be used to accomplish this?",
+    "question_text": "A user needs to quickly deploy a non-relational database on AWS. The user does not want to manage the underlying hardware or the database software.  Which AWS service can be used to accomplish this?",
     "options": [
       {
         "option_id": 1,
@@ -2136,7 +2156,7 @@
   },
   {
     "question_id": 994,
-    "question_text": "A Cloud Practitioner is developing a disaster recovery plan and intends to replicate data between multiple geographic areas.<br/> Which of the following meets these requirements?",
+    "question_text": "A Cloud Practitioner is developing a disaster recovery plan and intends to replicate data between multiple geographic areas. Which of the following meets these requirements?",
     "options": [
       {
         "option_id": 1,
@@ -2176,9 +2196,13 @@
       {
         "option_id": 4,
         "option_text": "Implementing consolidated billing"
+      },
+      {
+        "option_id": 5,
+        "option_text": "Enforcing the governance of AWS accounts."
       }
     ],
-    "correct_answer_id": 4
+    "correct_answer_id": [4,5]
   },
   {
     "question_id": 996,
@@ -2270,7 +2294,7 @@
         "option_text": "AWS VPN"
       }
     ],
-    "correct_answer_id": 2
+    "correct_answer_id": [2,4]
   },
   {
     "question_id": 1000,
@@ -2293,6 +2317,6 @@
         "option_text": "Physical security of data center facilities"
       }
     ],
-    "correct_answer_id": 1
+    "correct_answer_id": [1,3]
   }
 ]
