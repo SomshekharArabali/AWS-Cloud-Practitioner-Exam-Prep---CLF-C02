@@ -53,10 +53,10 @@ export default function QuizPage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 flex items-center justify-center">
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 flex items-center justify-center">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-orange-500 mx-auto mb-4"></div>
-          <p className="text-slate-600">Loading questions...</p>
+          <p className="text-slate-600 dark:text-gray-300">Loading questions...</p>
         </div>
       </div>
     )
@@ -64,9 +64,9 @@ export default function QuizPage() {
 
   if (questions.length === 0) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 flex items-center justify-center">
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 flex items-center justify-center">
         <div className="text-center">
-          <p className="text-slate-600">No questions found for this set.</p>
+          <p className="text-slate-600 dark:text-gray-300">No questions found for this set.</p>
           <Link href="/question-sets">
             <Button className="mt-4">Back to Question Sets</Button>
           </Link>
@@ -79,9 +79,9 @@ export default function QuizPage() {
 
   if (!currentQuestion) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 flex items-center justify-center">
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 flex items-center justify-center">
         <div className="text-center">
-          <p className="text-slate-600">Error loading current question.</p>
+          <p className="text-slate-600 dark:text-gray-300">Error loading current question.</p>
           <Link href="/question-sets">
             <Button className="mt-4">Back to Question Sets</Button>
           </Link>
@@ -114,7 +114,7 @@ export default function QuizPage() {
       if (isSelected) {
         return "bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white"
       }
-      return "hover:bg-slate-50"
+      return "hover:bg-slate-50 dark:hover:bg-secondary dark:border-gray-600 dark:text-gray-200"
     } else {
       // After revealing answers
       if (isSelected && isCorrect) {
@@ -122,9 +122,9 @@ export default function QuizPage() {
       } else if (isSelected && !isCorrect) {
         return "bg-gradient-to-r from-red-500 to-red-600 text-white border-red-500"
       } else if (!isSelected && isCorrect) {
-        return "bg-gradient-to-r from-green-100 to-green-200 text-green-800 border-green-300"
+        return "bg-gradient-to-r from-green-100 to-green-200 text-green-800 border-green-300 dark:from-green-900/30 dark:to-green-900/40 dark:text-green-300 dark:border-green-600"
       } else {
-        return "hover:bg-slate-50"
+        return "hover:bg-slate-50 dark:hover:bg-secondary dark:border-gray-600 dark:text-gray-200"
       }
     }
   }
@@ -232,63 +232,63 @@ export default function QuizPage() {
     const percentage = Math.round((score / questions.length) * 100)
 
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
-        <nav className="bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+        <nav className="bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50 dark:bg-gray-900/80 dark:border-gray-700">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
               <Link
                 href="/question-sets"
-                className="flex items-center space-x-2 text-slate-600 hover:text-orange-500 transition-colors"
+                className="flex items-center space-x-2 text-slate-600 hover:text-orange-500 transition-colors dark:text-gray-300 dark:hover:text-orange-400"
               >
                 <ArrowLeft className="w-5 h-5" />
                 <span>Back to Question Sets</span>
               </Link>
-              <span className="text-lg font-semibold text-slate-800">Quiz Results</span>
+              <span className="text-lg font-semibold text-slate-800 dark:text-white">Quiz Results</span>
             </div>
           </div>
         </nav>
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <Card className="border-0 shadow-xl">
+          <Card className="border-0 shadow-xl dark:bg-card dark:text-card-foreground dark:shadow-lg">
             <CardHeader className="text-center pb-6">
-              <div className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 bg-blue-100">
-                <CheckCircle className="w-10 h-10 text-blue-600" />
+              <div className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 bg-blue-100 dark:bg-blue-900/30">
+                <CheckCircle className="w-10 h-10 text-blue-600 dark:text-blue-400" />
               </div>
               <CardTitle className="text-3xl mb-2">Quiz Complete!</CardTitle>
-              <p className="text-xl text-slate-600">Here's your performance analysis for Question Set {setId}</p>
+              <p className="text-xl text-slate-600 dark:text-gray-300">Here's your performance analysis for Question Set {setId}</p>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="grid md:grid-cols-3 gap-4 text-center">
-                <div className="bg-slate-50 rounded-lg p-4">
-                  <div className="text-2xl font-bold text-slate-800">
+                <div className="bg-slate-50 rounded-lg p-4 dark:bg-secondary">
+                  <div className="text-2xl font-bold text-slate-800 dark:text-white">
                     {score}/{questions.length}
                   </div>
-                  <div className="text-slate-600">Correct Answers</div>
+                  <div className="text-slate-600 dark:text-gray-300">Correct Answers</div>
                 </div>
-                <div className="bg-slate-50 rounded-lg p-4">
-                  <div className="text-2xl font-bold text-slate-800">{percentage}%</div>
-                  <div className="text-slate-600">Accuracy</div>
+                <div className="bg-slate-50 rounded-lg p-4 dark:bg-secondary">
+                  <div className="text-2xl font-bold text-slate-800 dark:text-white">{percentage}%</div>
+                  <div className="text-slate-600 dark:text-gray-300">Accuracy</div>
                 </div>
-                <div className="bg-slate-50 rounded-lg p-4">
-                  <div className="text-2xl font-bold text-slate-800">{formatTime(timeElapsed)}</div>
-                  <div className="text-slate-600">Time Taken</div>
+                <div className="bg-slate-50 rounded-lg p-4 dark:bg-secondary">
+                  <div className="text-2xl font-bold text-slate-800 dark:text-white">{formatTime(timeElapsed)}</div>
+                  <div className="text-slate-600 dark:text-gray-300">Time Taken</div>
                 </div>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-6">
-                <h3 className="text-lg font-semibold text-slate-800 mb-4">Performance Analysis</h3>
+              <div className="bg-slate-50 rounded-lg p-6 dark:bg-secondary">
+                <h3 className="text-lg font-semibold text-slate-800 mb-4 dark:text-white">Performance Analysis</h3>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
-                    <span className="text-slate-600">Correct Answers:</span>
-                    <span className="font-medium text-green-600">{score} questions</span>
+                    <span className="text-slate-600 dark:text-gray-300">Correct Answers:</span>
+                    <span className="font-medium text-green-600 dark:text-green-400">{score} questions</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-slate-600">Incorrect Answers:</span>
-                    <span className="font-medium text-red-600">{questions.length - score} questions</span>
+                    <span className="text-slate-600 dark:text-gray-300">Incorrect Answers:</span>
+                    <span className="font-medium text-red-600 dark:text-red-400">{questions.length - score} questions</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-slate-600">Average Time per Question:</span>
-                    <span className="font-medium text-slate-800">{Math.round(timeElapsed / questions.length)}s</span>
+                    <span className="text-slate-600 dark:text-gray-300">Average Time per Question:</span>
+                    <span className="font-medium text-slate-800 dark:text-white">{Math.round(timeElapsed / questions.length)}s</span>
                   </div>
                 </div>
               </div>
@@ -304,7 +304,7 @@ export default function QuizPage() {
                 <Button
                   onClick={() => setShowDetails(!showDetails)}
                   variant="outline"
-                  className="border-orange-500 text-orange-500 hover:bg-orange-50"
+                  className="border-orange-500 text-orange-500 hover:bg-orange-50 dark:border-orange-400 dark:text-orange-400 dark:hover:bg-orange-900/20"
                 >
                   <Eye className="w-4 h-4 mr-2" />
                   {showDetails ? "Hide" : "View"} Detailed Review
@@ -313,7 +313,7 @@ export default function QuizPage() {
 
               {showDetails && (
                 <div className="mt-8 space-y-4">
-                  <h3 className="text-xl font-semibold text-slate-800 mb-4">Question Review</h3>
+                  <h3 className="text-xl font-semibold text-slate-800 mb-4 dark:text-white">Question Review</h3>
                   {questions.map((question, index) => {
                     const userAnswer = selectedAnswers[index]
                     const correctAnswer = question.correct_answer_id
@@ -341,29 +341,29 @@ export default function QuizPage() {
                     return (
                       <Card
                         key={question.question_id}
-                        className={`border-l-4 ${isCorrect ? "border-l-green-500" : "border-l-red-500"}`}
+                        className={`border-l-4 ${isCorrect ? "border-l-green-500" : "border-l-red-500"} dark:bg-secondary dark:text-secondary-foreground`}
                       >
                         <CardContent className="pt-6">
                           <div className="flex items-start justify-between mb-3">
-                            <h4 className="font-medium text-slate-800">Question {index + 1}</h4>
-                            <Badge className={isCorrect ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"}>
+                            <h4 className="font-medium text-slate-800 dark:text-white">Question {index + 1}</h4>
+                            <Badge className={isCorrect ? "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300" : "bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300"}>
                               {isCorrect ? "Correct" : "Incorrect"}
                             </Badge>
                           </div>
-                          <p className="text-slate-700 mb-4">{question.question_text}</p>
+                          <p className="text-slate-700 mb-4 dark:text-gray-300">{question.question_text}</p>
                           {Array.isArray(correctAnswer) && (
-                            <p className="text-sm text-blue-600 mb-3">(Choose {correctAnswer.length} answers)</p>
+                            <p className="text-sm text-blue-600 mb-3 dark:text-blue-400">(Choose {correctAnswer.length} answers)</p>
                           )}
                           <div className="space-y-2">
                             <div>
-                              <span className="text-sm font-medium text-slate-600">Your Answer: </span>
+                              <span className="text-sm font-medium text-slate-600 dark:text-gray-400">Your Answer: </span>
                               <span
                                 className={
                                   userOptions.length > 0
                                     ? isCorrect
-                                      ? "text-green-600"
-                                      : "text-red-600"
-                                    : "text-slate-500"
+                                      ? "text-green-600 dark:text-green-400"
+                                      : "text-red-600 dark:text-red-400"
+                                    : "text-slate-500 dark:text-gray-500"
                                 }
                               >
                                 {userOptions.length > 0
@@ -373,8 +373,8 @@ export default function QuizPage() {
                             </div>
                             {!isCorrect && (
                               <div>
-                                <span className="text-sm font-medium text-slate-600">Correct Answer: </span>
-                                <span className="text-green-600">
+                                <span className="text-sm font-medium text-slate-600 dark:text-gray-400">Correct Answer: </span>
+                                <span className="text-green-600 dark:text-green-400">
                                   {correctOptions.map((opt) => opt.option_text).join(", ")}
                                 </span>
                               </div>
@@ -394,24 +394,24 @@ export default function QuizPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
       {/* Navigation */}
-      <nav className="bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
+      <nav className="bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50 dark:bg-gray-900/80 dark:border-gray-700">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link
               href="/question-sets"
-              className="flex items-center space-x-2 text-slate-600 hover:text-orange-500 transition-colors"
+              className="flex items-center space-x-2 text-slate-600 hover:text-orange-500 transition-colors dark:text-gray-300 dark:hover:text-orange-400"
             >
               <ArrowLeft className="w-5 h-5" />
               <span>Back to Question Sets</span>
             </Link>
             <div className="flex items-center space-x-4">
-              <div className="flex items-center space-x-2 text-slate-600">
+              <div className="flex items-center space-x-2 text-slate-600 dark:text-gray-300">
                 <Clock className="w-4 h-4" />
                 <span>{formatTime(timeElapsed)}</span>
               </div>
-              <Badge variant="outline" className="border-orange-500 text-orange-500">
+              <Badge variant="outline" className="border-orange-500 text-orange-500 dark:border-orange-400 dark:text-orange-400">
                 Set {setId}
               </Badge>
             </div>
@@ -423,19 +423,19 @@ export default function QuizPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="mb-6">
           <div className="flex justify-between items-center mb-2">
-            <span className="text-sm font-medium text-slate-600">
+            <span className="text-sm font-medium text-slate-600 dark:text-gray-300">
               Question {currentQuestionIndex + 1} of {questions.length}
             </span>
-            <span className="text-sm font-medium text-slate-600">{Math.round(progress)}% Complete</span>
+            <span className="text-sm font-medium text-slate-600 dark:text-gray-300">{Math.round(progress)}% Complete</span>
           </div>
           <Progress value={progress} className="h-2" />
         </div>
 
-        <Card className="border-0 shadow-xl">
+        <Card className="border-0 shadow-xl dark:bg-card dark:text-card-foreground dark:shadow-lg">
           <CardHeader>
             <CardTitle className="text-xl leading-relaxed">{currentQuestion.question_text}</CardTitle>
             {isMultipleChoice && (
-              <p className="text-sm text-blue-600 mt-2">
+              <p className="text-sm text-blue-600 mt-2 dark:text-blue-400">
                 Choose {requiredSelections} answer{requiredSelections > 1 ? "s" : ""}
               </p>
             )}
@@ -468,11 +468,11 @@ export default function QuizPage() {
                             : isSelected && !isCorrect
                               ? "border-white bg-white"
                               : !isSelected && isCorrect
-                                ? "border-green-600 bg-green-100"
-                                : "border-slate-300"
+                                ? "border-green-600 bg-green-100 dark:bg-green-900/30"
+                                : "border-slate-300 dark:border-gray-500"
                           : isSelected
                             ? "border-white bg-white"
-                            : "border-slate-300"
+                            : "border-slate-300 dark:border-gray-500"
                       }`}
                     >
                       {showAnswerFeedback ? (

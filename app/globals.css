@@ -27,24 +27,24 @@
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 217.2 91.2% 59.8%;
-    --primary-foreground: 222.2 84% 4.9%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --background: 220 15% 10%; /* Deeper, darker background */
+    --foreground: 210 20% 90%; /* Lighter, but not pure white text */
+    --card: 220 15% 15%; /* Darker card background */
+    --card-foreground: 210 20% 90%;
+    --popover: 220 15% 15%;
+    --popover-foreground: 210 20% 90%;
+    --primary: 217.2 91.2% 59.8%; /* Keep primary vibrant */
+    --primary-foreground: 220 15% 10%;
+    --secondary: 220 15% 20%; /* Darker secondary */
+    --secondary-foreground: 210 20% 90%;
+    --muted: 220 15% 20%;
+    --muted-foreground: 215 10% 60%; /* Slightly lighter muted text */
+    --accent: 220 15% 20%;
+    --accent-foreground: 210 20% 90%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
+    --border: 220 15% 25%; /* Darker, more subtle border */
+    --input: 220 15% 20%;
     --ring: 224.3 76.3% 94.1%;
   }
 }
@@ -98,4 +98,17 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #94a3b8;
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-track {
+  background: #1e293b; /* Darker track */
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #475569; /* Darker thumb */
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #64748b; /* Darker thumb hover */
 }

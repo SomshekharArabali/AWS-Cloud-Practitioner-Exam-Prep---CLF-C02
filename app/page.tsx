@@ -16,38 +16,42 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import { ThemeToggle } from "@/components/ThemeToggle" // Import the new ThemeToggle component
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
       {/* Navigation */}
-      <nav className="bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
+      <nav className="bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50 dark:bg-gray-900/80 dark:border-gray-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center">
                 <Certificate className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold text-slate-800">AWS Prep</span>
+              <span className="text-xl font-bold text-slate-800 dark:text-white">AWS Prep</span>
             </div>
-            <div className="hidden md:flex items-center space-x-8">
-              <Link href="#modules" className="text-slate-600 hover:text-orange-500 transition-colors">
-                Modules
-              </Link>
-              <Link href="#question-sets" className="text-slate-600 hover:text-orange-500 transition-colors">
-                Question Sets
-              </Link>
-              <Link href="#about" className="text-slate-600 hover:text-orange-500 transition-colors">
-                About
-              </Link>
+            <div className="flex items-center space-x-4"> {/* Added flex container for nav links and toggle */}
+              <div className="hidden md:flex items-center space-x-8">
+                <Link href="#modules" className="text-slate-600 hover:text-orange-500 transition-colors dark:text-gray-300 dark:hover:text-orange-400">
+                  Modules
+                </Link>
+                <Link href="#question-sets" className="text-slate-600 hover:text-orange-500 transition-colors dark:text-gray-300 dark:hover:text-orange-400">
+                  Question Sets
+                </Link>
+                <Link href="#about" className="text-slate-600 hover:text-orange-500 transition-colors dark:text-gray-300 dark:hover:text-orange-400">
+                  About
+                </Link>
+              </div>
+              <ThemeToggle /> {/* Placed the ThemeToggle here */}
             </div>
           </div>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-orange-500/10 via-red-500/10 to-pink-500/10"></div>
+      <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden dark:bg-gradient-to-br dark:from-gray-900 dark:via-blue-950 dark:to-indigo-950">
+        <div className="absolute inset-0 bg-gradient-to-r from-orange-500/10 via-red-500/10 to-pink-500/10 dark:from-orange-900/10 dark:via-red-900/10 dark:to-pink-900/10"></div>
         <div className="relative max-w-7xl mx-auto text-center">
           <div className="mb-8">
            <Image
@@ -60,13 +64,13 @@ export default function HomePage() {
 />
 
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold text-slate-800 mb-6">
+          <h1 className="text-5xl md:text-6xl font-bold text-slate-800 mb-6 dark:text-white">
             Master AWS Cloud
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">
               Practitioner Exam
             </span>
           </h1>
-          <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto leading-relaxed dark:text-gray-300">
             Comprehensive preparation platform with 1100+ practice questions across 11 question sets and 10 structured
             modules to help you ace the CLF-C02 certification exam.
           </p>
@@ -84,7 +88,7 @@ export default function HomePage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-orange-500 text-orange-500 hover:bg-orange-50 px-8 py-3 text-lg bg-transparent"
+                className="border-orange-500 text-orange-500 hover:bg-orange-50 px-8 py-3 text-lg bg-transparent dark:border-orange-400 dark:text-orange-400 dark:hover:bg-orange-900/20"
               >
                 <Brain className="w-5 h-5 mr-2" />
                 Question Sets
@@ -95,41 +99,41 @@ export default function HomePage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white/50">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white/50 dark:bg-gray-800/50">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="text-3xl font-bold text-orange-500 mb-2">1100+</div>
-              <div className="text-slate-600">Practice Questions</div>
+              <div className="text-slate-600 dark:text-gray-300">Practice Questions</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-red-500 mb-2">11</div>
-              <div className="text-slate-600">Question Sets</div>
+              <div className="text-slate-600 dark:text-gray-300">Question Sets</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-blue-500 mb-2">10</div>
-              <div className="text-slate-600">Learning Modules</div>
+              <div className="text-slate-600 dark:text-gray-300">Learning Modules</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-green-500 mb-2">CLF-C02</div>
-              <div className="text-slate-600">Latest Exam</div>
+              <div className="text-slate-600 dark:text-gray-300">Latest Exam</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Features Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-slate-800 mb-4">Everything You Need to Succeed</h2>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+            <h2 className="text-4xl font-bold text-slate-800 mb-4 dark:text-white">Everything You Need to Succeed</h2>
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto dark:text-gray-300">
               Comprehensive study materials and practice tests designed to help you pass the AWS Cloud Practitioner exam
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-16">
-            <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 dark:bg-card dark:text-card-foreground dark:shadow-lg">
               <CardHeader className="text-center pb-4">
                 <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <BookOpen className="w-8 h-8 text-white" />
@@ -137,12 +141,12 @@ export default function HomePage() {
                 <CardTitle className="text-xl">Structured Learning</CardTitle>
               </CardHeader>
               <CardContent className="text-center">
-                <CardDescription className="text-base">
+                <CardDescription className="text-base dark:text-muted-foreground">
 10 comprehensive modules covering all exam domains with targeted questions for focused practice.                </CardDescription>
               </CardContent>
             </Card>
 
-            <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 dark:bg-card dark:text-card-foreground dark:shadow-lg">
               <CardHeader className="text-center pb-4">
                 <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Brain className="w-8 h-8 text-white" />
@@ -150,13 +154,13 @@ export default function HomePage() {
                 <CardTitle className="text-xl">Practice Tests</CardTitle>
               </CardHeader>
               <CardContent className="text-center">
-                <CardDescription className="text-base">
+                <CardDescription className="text-base dark:text-muted-foreground">
                   11 question sets with 1100+ practice questions to test your knowledge and exam readiness
                 </CardDescription>
               </CardContent>
             </Card>
 
-            <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 dark:bg-card dark:text-card-foreground dark:shadow-lg">
               <CardHeader className="text-center pb-4">
                 <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Award className="w-8 h-8 text-white" />
@@ -164,7 +168,7 @@ export default function HomePage() {
                 <CardTitle className="text-xl">Exam Simulation</CardTitle>
               </CardHeader>
               <CardContent className="text-center">
-                <CardDescription className="text-base">
+                <CardDescription className="text-base dark:text-muted-foreground">
                   Real exam experience with detailed performance analytics and progress tracking
                 </CardDescription>
               </CardContent>
@@ -174,11 +178,11 @@ export default function HomePage() {
       </section>
 
       {/* Question Sets Section */}
-      <section id="question-sets" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-slate-50 to-blue-50">
+      <section id="question-sets" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-slate-50 to-blue-50 dark:from-gray-800 dark:to-blue-900">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-slate-800 mb-4">Question Sets</h2>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+            <h2 className="text-4xl font-bold text-slate-800 mb-4 dark:text-white">Question Sets</h2>
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto dark:text-gray-300">
               Practice with our comprehensive collection of 1100+ AWS Cloud Practitioner exam questions
             </p>
           </div>
@@ -187,21 +191,21 @@ export default function HomePage() {
             {Array.from({ length: 11 }, (_, i) => (
               <Card
                 key={i + 1}
-                className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group"
+                className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group dark:bg-card dark:text-card-foreground dark:shadow-lg"
               >
                 <CardHeader className="pb-4">
                   <div className="flex items-center justify-between">
                     <CardTitle className="text-lg">Question Set {i + 1}</CardTitle>
-                    <Badge variant="secondary" className="bg-orange-100 text-orange-700">
+                    <Badge variant="secondary" className="bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300">
                       100 Questions
                     </Badge>
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="mb-4">
+                  <CardDescription className="mb-4 dark:text-muted-foreground">
                     Practice questions covering key AWS concepts and services for the CLF-C02 exam.
                   </CardDescription>
-                  <div className="flex items-center justify-between text-sm text-slate-500 mb-4">
+                  <div className="flex items-center justify-between text-sm text-slate-500 mb-4 dark:text-muted-foreground">
                     <div className="flex items-center">
                       <Clock className="w-4 h-4 mr-1" />
                       ~150 min
@@ -224,11 +228,11 @@ export default function HomePage() {
       </section>
 
       {/* Modules Section */}
-      <section id="modules" className="py-20 px-4 sm:px-6 lg:px-8">
+      <section id="modules" className="py-20 px-4 sm:px-6 lg:px-8 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-slate-800 mb-4">Learning Modules</h2>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+            <h2 className="text-4xl font-bold text-slate-800 mb-4 dark:text-white">Learning Modules</h2>
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto dark:text-gray-300">
               Structured learning path covering all AWS Cloud Practitioner exam domains
             </p>
           </div>
@@ -260,20 +264,20 @@ export default function HomePage() {
             ].map((module, index) => (
               <Card
                 key={index + 1}
-                className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group"
+                className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group dark:bg-card dark:text-card-foreground dark:shadow-lg"
               >
                 <CardHeader>
                   <div className="flex items-center justify-between">
                     <CardTitle className="text-xl">
                       Module {index + 1}: {module.title}
                     </CardTitle>
-                    <Badge variant="outline" className="border-blue-500 text-blue-700">
+                    <Badge variant="outline" className="border-blue-500 text-blue-700 dark:border-blue-400 dark:text-blue-300">
                       {module.questions} Questions
                     </Badge>
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="mb-4 text-base">{module.description}</CardDescription>
+                  <CardDescription className="mb-4 text-base dark:text-muted-foreground">{module.description}</CardDescription>
                   <Link href={`/modules/${index + 1}/quiz`}>
                     <Button className="w-full bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 group-hover:shadow-lg transition-all">
                       <BookOpen className="w-4 h-4 mr-2" />
@@ -288,15 +292,15 @@ export default function HomePage() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-orange-50 to-red-50">
+      <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-orange-50 to-red-50 dark:from-gray-800 dark:to-red-900">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-slate-800 mb-8">About This Platform</h2>
-          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
+          <h2 className="text-4xl font-bold text-slate-800 mb-8 dark:text-white">About This Platform</h2>
+          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg dark:bg-card/80 dark:shadow-lg">
             <div className="flex items-center justify-center mb-6">
               <Users className="w-8 h-8 text-orange-500 mr-3" />
-              <span className="text-2xl font-semibold text-slate-800">Created by Somashekhar Arabali</span>
+              <span className="text-2xl font-semibold text-slate-800 dark:text-white">Created by Somashekhar Arabali</span>
             </div>
-            <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+            <p className="text-lg text-slate-600 mb-8 leading-relaxed dark:text-gray-300">
               This comprehensive AWS Cloud Practitioner exam preparation platform is designed to help you succeed in
               your certification journey. With carefully curated questions and detailed explanations, you'll build the
               confidence needed to pass the CLF-C02 exam.
@@ -304,18 +308,18 @@ export default function HomePage() {
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <div className="flex items-center justify-center">
                 <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
-                <span className="text-slate-700">Mobile Responsive</span>
+                <span className="text-slate-700 dark:text-gray-300">Mobile Responsive</span>
               </div>
               <div className="flex items-center justify-center">
                 <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
-                <span className="text-slate-700">Progress Tracking</span>
+                <span className="text-slate-700 dark:text-gray-300">Progress Tracking</span>
               </div>
               <div className="flex items-center justify-center">
                 <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
-                <span className="text-slate-700">Detailed Analytics</span>
+                <span className="text-slate-700 dark:text-gray-300">Detailed Analytics</span>
               </div>
             </div>
-            <p className="text-slate-600 mb-6">
+            <p className="text-slate-600 mb-6 dark:text-gray-300">
               If you find this content helpful, please consider supporting the project:
             </p>
             <a
@@ -334,7 +338,7 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-800 text-white py-12 px-4 sm:px-6 lg:px-8">
+      <footer className="bg-slate-800 text-white py-12 px-4 sm:px-6 lg:px-8 dark:bg-gray-950">
         <div className="max-w-7xl mx-auto text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
             <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center">
