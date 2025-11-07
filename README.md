@@ -15,7 +15,6 @@ This is a comprehensive preparation platform designed to help users master the A
 
 ## Screenshots
 
-Replace these image links with your actual screenshot URLs.
 
 ### Home Page
 ![Home Page Screenshot](public/img/Homepage.jpg)
